@@ -191,19 +191,19 @@ export default function App() {
     return () => {
       if (timerRef.current) clearInterval(timerRef.current);
     };
-  }, [quizState?.isFinished]);
+  }, [quizState?.startTime, quizState?.isFinished]);
 
   useEffect(() => {
     if (timerDisplay === 0 && timerStarted && quizState && !quizState.isFinished) {
       if (timerRef.current) clearInterval(timerRef.current);
-      setQuizState(prev => prev ? { ...prev, isFinished: true } : null);
+      finishQuiz();
     }
   }, [timerDisplay]);
 
 
   // --- Quiz start functions ---
   const startSpeedQuiz = () => {
-    const pool = [...STUDY_DATA.questions].sort(() => Math.random() - 0.5).slice(0, 10);
+    const pool = shuffle(STUDY_DATA.questions).slice(0, 10);
     setQuizState({
       questions: pool,
       shuffledOptions: pool.map(q => shuffleOptions(q)),
@@ -231,9 +231,8 @@ export default function App() {
       alert('No wrong answers saved yet! Take a quiz first.');
       return;
     }
-    const pool = STUDY_DATA.questions
-      .filter(q => bank.includes(q.id))
-      .sort(() => Math.random() - 0.5);
+    const pool = shuffle(STUDY_DATA.questions
+      .filter(q => bank.includes(q.id)));
     setQuizState({
       questions: pool,
       shuffledOptions: pool.map(q => shuffleOptions(q)),
@@ -251,9 +250,8 @@ export default function App() {
 
   const startTopicDrill = (cat: string) => {
     setSelectedCategories([cat]);
-    const pool = STUDY_DATA.questions
-      .filter(q => q.category === cat)
-      .sort(() => Math.random() - 0.5)
+    const pool = shuffle(STUDY_DATA.questions
+      .filter(q => q.category === cat))
       .slice(0, 20);
     setQuizState({
       questions: pool,
@@ -284,9 +282,8 @@ export default function App() {
     const cats = getWeakCategories();
     setSelectedCategories(cats);
     setDrillLabel(`Weak Areas: ${cats.map(c => c.split(' ').slice(-1)[0]).join(' + ')}`);
-    const pool = STUDY_DATA.questions
-      .filter(q => cats.includes(q.category))
-      .sort(() => Math.random() - 0.5)
+    const pool = shuffle(STUDY_DATA.questions
+      .filter(q => cats.includes(q.category)))
       .slice(0, 20);
     setQuizState({
       questions: pool,
@@ -311,11 +308,10 @@ export default function App() {
     const activeCats = selectedCategories.length > 0 ? selectedCategories : null;
     let pool;
     if (type === 'full') {
-      pool = [...STUDY_DATA.questions].sort(() => Math.random() - 0.5).slice(0, 100);
+      pool = shuffle(STUDY_DATA.questions).slice(0, 100);
     } else {
-      pool = STUDY_DATA.questions
-          .filter(q => !activeCats || activeCats.includes(q.category))
-          .sort(() => Math.random() - 0.5)
+      pool = shuffle(STUDY_DATA.questions
+          .filter(q => !activeCats || activeCats.includes(q.category)))
           .slice(0, 20);
     }
     if (pool.length === 0) {
@@ -365,9 +361,11 @@ export default function App() {
     quizState.questions.forEach((q, idx) => {
       const answer = quizState.answers[idx];
       if (answer === null) return;
-      newProgress[q.category].total += 1;
+      const cat = { ...(newProgress[q.category] ?? { total: 0, correct: 0 }) };
+      newProgress[q.category] = cat;
+      cat.total += 1;
       if (answer === q.correctAnswer) {
-        newProgress[q.category].correct += 1;
+        cat.correct += 1;
         currentStreak++;
         if (currentStreak > maxStreak) maxStreak = currentStreak;
         const pos = bank.indexOf(q.id);
@@ -389,7 +387,7 @@ export default function App() {
 
     const scoreCalc = quizState.answers.filter((a, i) => a === quizState.questions[i].correctAnswer).length;
     const skippedCalc = quizState.answers.filter(a => a === null).length;
-    const maxDurationCalc = quizType === 'full' ? 50 * 60 : 15 * 60;
+    const maxDurationCalc = quizState.timeRemaining;
     const elapsedCalc = Math.min(Math.floor((Date.now() - quizState.startTime) / 1000), maxDurationCalc);
     const pctCalc = quizState.questions.length > 0 && skippedCalc < quizState.questions.length ? Math.round((scoreCalc / quizState.questions.length) * 100) : 0;
 
@@ -420,9 +418,8 @@ export default function App() {
       .filter((_, i) => quizState.answers[i] !== null && quizState.answers[i] !== quizState.questions[i].correctAnswer)
       .map(q => q.id);
     if (missedIds.length === 0) return;
-    const pool = STUDY_DATA.questions
-      .filter(q => missedIds.includes(q.id))
-      .sort(() => Math.random() - 0.5);
+    const pool = shuffle(STUDY_DATA.questions
+      .filter(q => missedIds.includes(q.id)));
     setDrillLabel(`Missed Review (${pool.length} q)`);
     setQuizState({
       questions: pool,
@@ -503,6 +500,9 @@ export default function App() {
         <Card className="p-5 border-blue-500/20 bg-blue-950/20">
           <div className="text-center space-y-3">
             <p className="text-xs font-bold uppercase tracking-widest text-blue-400">Nationals · June 30, 2026 · 10:00 AM CT</p>
+            {timeLeft === 0 ? (
+              <p className="text-sm text-slate-400">The 2026 event is over. The question bank still works for practice.</p>
+            ) : (
             <div className="grid grid-cols-4 gap-3">
               {[['Days', days], ['Hrs', hrs], ['Min', mins], ['Sec', secs]].map(([label, val]) => (
                 <div key={label as string} className="flex flex-col items-center bg-slate-900 rounded-lg py-3">
@@ -511,6 +511,7 @@ export default function App() {
                 </div>
               ))}
             </div>
+            )}
           </div>
         </Card>
       </div>
@@ -559,7 +560,7 @@ export default function App() {
         <Card className="p-3 text-center cursor-pointer hover:border-purple-500/30 transition-all group" onClick={() => { setSelectedCategories(Object.values(CATEGORIES)); setMode('quiz'); }}>
           <div className="text-2xl mb-1">📚</div>
           <div className="text-xs font-bold text-slate-300 group-hover:text-purple-400">All Topics</div>
-          <div className="text-[10px] text-slate-500">523 questions</div>
+          <div className="text-[10px] text-slate-500">{STUDY_DATA.questions.length} questions</div>
         </Card>
         <Card className="p-3 text-center cursor-pointer hover:border-emerald-500/30 transition-all group" onClick={() => setMode('progress')}>
           <div className="text-2xl mb-1">📊</div>
@@ -609,9 +610,8 @@ export default function App() {
     // The active queue: an ordered array of card IDs. Unsure cards get reinserted;
     // known cards are removed. Persisted so refreshing mid-session keeps your place.
     const buildQueue = (cat: string) =>
-      STUDY_DATA.flashcards
-        .filter(c => cat === 'All' || c.category === cat)
-        .sort(() => Math.random() - 0.5)
+      shuffle(STUDY_DATA.flashcards
+        .filter(c => cat === 'All' || c.category === cat))
         .map(c => c.id);
 
     const [queue, setQueue] = useState<string[]>(() => {
@@ -907,9 +907,8 @@ export default function App() {
                         } catch {
                           ids = [];
                         }
-                        const pool = STUDY_DATA.questions
-                          .filter(q => ids.includes(q.id))
-                          .sort(() => Math.random() - 0.5)
+                        const pool = shuffle(STUDY_DATA.questions
+                          .filter(q => ids.includes(q.id)))
                           .slice(0, 20);
                         setDrillLabel(`Wrong Bank (${Math.min(pool.length, 20)} q)`);
                         setQuizState({ questions: pool, shuffledOptions: pool.map(q => shuffleOptions(q)), currentIndex: 0, answers: new Array(pool.length).fill(null), isFinished: false, startTime: Date.now(), timeRemaining: 15 * 60, reviewMode: true });
@@ -968,7 +967,7 @@ export default function App() {
       const skipped = quizState.answers.filter(a => a === null).length;
       const answered = quizState.questions.length - skipped;
       const percentage = answered > 0 ? Math.round((score / quizState.questions.length) * 100) : 0;
-      const maxDuration = quizType === 'full' ? 50 * 60 : 15 * 60;
+      const maxDuration = quizState.timeRemaining;
       const elapsed = Math.min(Math.floor((Date.now() - quizState.startTime) / 1000), maxDuration);
       
       // Calculate streak for this session
@@ -1013,9 +1012,8 @@ export default function App() {
 
       const drillMissed = () => {
         if (missedIds.length === 0) return;
-        const pool = STUDY_DATA.questions
-          .filter(q => missedIds.includes(q.id))
-          .sort(() => Math.random() - 0.5);
+        const pool = shuffle(STUDY_DATA.questions
+          .filter(q => missedIds.includes(q.id)));
         setDrillLabel(`Missed Review (${pool.length} q)`);
         setQuizState({
           questions: pool,
