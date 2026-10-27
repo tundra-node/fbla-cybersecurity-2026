@@ -1010,7 +1010,7 @@ export const STUDY_DATA: { questions: Question[]; flashcards: Flashcard[] } = {
       question: "Which security standard, replaced by the Common Criteria, contains the Orange Book requirements?",
       options: ["ITSEC", "TCSEC", "FIPS 140", "SAS 70"],
       correctAnswer: 1,
-      explanation: "NLC practice question - review topic for details.",
+      explanation: "TCSEC (the Orange Book) was superseded by the Common Criteria, which unified multiple evaluation criteria into one international standard.",
     },
     {
       id: "nlc_001",
@@ -1018,7 +1018,7 @@ export const STUDY_DATA: { questions: Question[]; flashcards: Flashcard[] } = {
       question: "The Trusted Computer System Evaluation Criteria (TCSEC) was published by which organization?",
       options: ["NIST", "NSA", "DOD", "IEEE"],
       correctAnswer: 2,
-      explanation: "NLC practice question - review topic for details.",
+      explanation: "TCSEC was published by the U.S. Department of Defense, developed under NSA sponsorship.",
     },
     {
       id: "nlc_002",
@@ -1034,7 +1034,7 @@ export const STUDY_DATA: { questions: Question[]; flashcards: Flashcard[] } = {
       question: "The Red Book in the Rainbow Series covers which topic?",
       options: ["Cryptography", "Network Security", "Password Management", "Audit Trails"],
       correctAnswer: 1,
-      explanation: "NLC practice question - review topic for details.",
+      explanation: "The Red Book covers Trusted Network Interpretation, extending TCSEC to networks.",
     },
     {
       id: "nlc_004",
@@ -1058,7 +1058,7 @@ export const STUDY_DATA: { questions: Question[]; flashcards: Flashcard[] } = {
       question: "TCSEC Division C, level C2 provides which security feature?",
       options: ["Mandatory Access Control", "Discretionary Access Control with audit", "No security features", "Physical security only"],
       correctAnswer: 1,
-      explanation: "NLC practice question - review topic for details.",
+      explanation: "C2 adds discretionary access control with individual accountability and audit.",
     },
     {
       id: "nlc_007",
@@ -1066,7 +1066,7 @@ export const STUDY_DATA: { questions: Question[]; flashcards: Flashcard[] } = {
       question: "Which TCSEC level requires formal security verification and testing?",
       options: ["C2", "B1", "B3", "A1"],
       correctAnswer: 3,
-      explanation: "NLC practice question - review topic for details.",
+      explanation: "A1 requires formal design specification, formal verification, and formal security testing.",
     },
     {
       id: "nlc_008",
@@ -1074,7 +1074,7 @@ export const STUDY_DATA: { questions: Question[]; flashcards: Flashcard[] } = {
       question: "ITSEC was developed as a European alternative to TCSEC. What does ITSEC stand for?",
       options: ["International Technical Security", "Information Technology Security Evaluation Criteria", "Integrated Technology Security", "Information Technical Systems Evaluation"],
       correctAnswer: 1,
-      explanation: "NLC practice question - review topic for details.",
+      explanation: "ITSEC stands for Information Technology Security Evaluation Criteria.",
     },
     {
       id: "nlc_009",
@@ -1082,7 +1082,7 @@ export const STUDY_DATA: { questions: Question[]; flashcards: Flashcard[] } = {
       question: "Which Rainbow Series book is commonly called the Orange Book?",
       options: ["Trusted Computer System Evaluation Criteria", "Security Requirements for Automated Information Systems", "Trusted Network Interpretation", "Evaluation of Secrecy Systems"],
       correctAnswer: 0,
-      explanation: "NLC practice question - review topic for details.",
+      explanation: "The Orange Book is TCSEC itself, named for its cover color.",
     },
     {
       id: "nlc_010",
@@ -1090,7 +1090,7 @@ export const STUDY_DATA: { questions: Question[]; flashcards: Flashcard[] } = {
       question: "The Rainbow Series gets its name because:",
       options: ["Authors used pseudonyms", "Each publication had a different colored cover", "It covered diverse technical topics", "It was printed on multicolor paper"],
       correctAnswer: 1,
-      explanation: "NLC practice question - review topic for details.",
+      explanation: "Each Rainbow Series book had a different colored cover.",
     },
     {
       id: "nlc_011",
@@ -1098,7 +1098,7 @@ export const STUDY_DATA: { questions: Question[]; flashcards: Flashcard[] } = {
       question: "TCSEC Division B, level B1 provides which security feature?",
       options: ["No protection", "Mandatory Access Control with labels", "Only Physical security", "Network security only"],
       correctAnswer: 1,
-      explanation: "NLC practice question - review topic for details.",
+      explanation: "B1 adds Mandatory Access Control with sensitivity labels.",
     },
     {
       id: "nlc_012",
@@ -1106,7 +1106,7 @@ export const STUDY_DATA: { questions: Question[]; flashcards: Flashcard[] } = {
       question: "The ITSEC evaluation scale ranges from:",
       options: ["F0 to F10", "E0 to E6", "A to D", "1 to 7"],
       correctAnswer: 1,
-      explanation: "NLC practice question - review topic for details.",
+      explanation: "ITSEC uses functionality classes F-E2 to F-C2 and assurance classes E0 to E6.",
     },
     {
       id: "nlc_013",
@@ -1114,7 +1114,7 @@ export const STUDY_DATA: { questions: Question[]; flashcards: Flashcard[] } = {
       question: "Which ITSEC functionality class provides structured protection against accidental attack?",
       options: ["F-C2", "F-C1", "F-B1", "F-E2"],
       correctAnswer: 0,
-      explanation: "NLC practice question - review topic for details.",
+      explanation: "F-C1 provides structured protection against accidental attacks.",
     },
     {
       id: "nlc_014",
@@ -1122,7 +1122,7 @@ export const STUDY_DATA: { questions: Question[]; flashcards: Flashcard[] } = {
       question: "The Common Criteria succeeded TCSEC and ITSEC because:",
       options: ["It was faster to implement", "It unified multiple standards into a single international framework", "It required less documentation", "It was mandated by law"],
       correctAnswer: 1,
-      explanation: "NLC practice question - review topic for details.",
+      explanation: "The Common Criteria merged TCSEC, ITSEC, and CTCPEC into one international standard.",
     },
     {
       id: "nlc_015",
@@ -1130,7 +1130,7 @@ export const STUDY_DATA: { questions: Question[]; flashcards: Flashcard[] } = {
       question: "Which Common Criteria EAL represents the highest degree of security assurance?",
       options: ["EAL4", "EAL6", "EAL7", "EAL10"],
       correctAnswer: 2,
-      explanation: "NLC practice question - review topic for details.",
+      explanation: "EAL7 is the highest Common Criteria evaluation assurance level.",
     },
     {
       id: "nlc_016",
@@ -1138,7 +1138,7 @@ export const STUDY_DATA: { questions: Question[]; flashcards: Flashcard[] } = {
       question: "A system evaluated at TCSEC C1 provides:",
       options: ["No protection", "Discretionary protection", "Controlled access protection", "Verified protection"],
       correctAnswer: 1,
-      explanation: "NLC practice question - review topic for details.",
+      explanation: "C1 provides discretionary access control.",
     },
     {
       id: "nlc_017",
@@ -1146,7 +1146,7 @@ export const STUDY_DATA: { questions: Question[]; flashcards: Flashcard[] } = {
       question: "The Rainbow Series Green Book specifically addresses:",
       options: ["Cryptography", "Password Management", "Network Security", "Audit and Accountability"],
       correctAnswer: 1,
-      explanation: "NLC practice question - review topic for details.",
+      explanation: "The Green Book covers password management guidance.",
     },
     {
       id: "nlc_018",
@@ -1162,7 +1162,7 @@ export const STUDY_DATA: { questions: Question[]; flashcards: Flashcard[] } = {
       question: "TCSEC Division A represents which level of assurance?",
       options: ["Minimal protection", "Discretionary protection", "Verified design with formal verification", "Controlled access"],
       correctAnswer: 2,
-      explanation: "NLC practice question - review topic for details.",
+      explanation: "Division A is Verified Protection with formal design throughout.",
     },
     {
       id: "nlc_020",
@@ -1178,7 +1178,7 @@ export const STUDY_DATA: { questions: Question[]; flashcards: Flashcard[] } = {
       question: "The Common Criteria was published as ISO:",
       options: ["ISO 27001", "ISO 15408", "ISO 20000", "ISO 9001"],
       correctAnswer: 1,
-      explanation: "NLC practice question - review topic for details.",
+      explanation: "ISO/IEC 15408 is the international standard for the Common Criteria.",
     },
     {
       id: "nlc_022",
@@ -1194,7 +1194,7 @@ export const STUDY_DATA: { questions: Question[]; flashcards: Flashcard[] } = {
       question: "The Morris Worm of 1988 exploited all of the following vulnerabilities EXCEPT:",
       options: ["sendmail debug mode", "fingerd buffer overflow", "weak passwords", "SQL injection"],
       correctAnswer: 3,
-      explanation: "NLC practice question - review topic for details.",
+      explanation: "SQL injection did not exist in 1988. The Morris Worm exploited sendmail, fingerd, and weak passwords.",
     },
     {
       id: "nlc_024",
@@ -1202,7 +1202,7 @@ export const STUDY_DATA: { questions: Question[]; flashcards: Flashcard[] } = {
       question: "The primary propagation method of the Morris Worm was:",
       options: ["Email attachments", "Exploiting sendmail and fingerd vulnerabilities", "Infected USB drives", "Social media links"],
       correctAnswer: 1,
-      explanation: "NLC practice question - review topic for details.",
+      explanation: "The Morris Worm spread via sendmail debug mode, fingerd buffer overflows, and weak password guessing.",
     },
     {
       id: "nlc_025",
@@ -1210,7 +1210,7 @@ export const STUDY_DATA: { questions: Question[]; flashcards: Flashcard[] } = {
       question: "The Melissa virus (1999) was notable for which characteristic?",
       options: ["It encrypted files for ransom", "It spread via email with an infected Word document attachment", "It targeted industrial control systems", "It was the first boot sector virus"],
       correctAnswer: 1,
-      explanation: "NLC practice question - review topic for details.",
+      explanation: "Melissa spread via email using an infected Word document macro that emailed itself to contacts.",
     },
     {
       id: "nlc_026",
@@ -1218,7 +1218,7 @@ export const STUDY_DATA: { questions: Question[]; flashcards: Flashcard[] } = {
       question: "The ILOVEYOU worm (2000) spread primarily through:",
       options: ["Network shares", "Email with a VBScript attachment", "Infected websites", "Bluetooth"],
       correctAnswer: 1,
-      explanation: "NLC practice question - review topic for details.",
+      explanation: "ILOVEYOU spread via email with a VBScript attachment.",
     },
     {
       id: "nlc_027",
@@ -1226,7 +1226,7 @@ export const STUDY_DATA: { questions: Question[]; flashcards: Flashcard[] } = {
       question: "Which best describes the payload of the ILOVEYOU worm?",
       options: ["It stole banking credentials", "It overwrote image and music files and sent copies to all Outlook contacts", "It encrypted hard drives", "It installed a keylogger"],
       correctAnswer: 1,
-      explanation: "NLC practice question - review topic for details.",
+      explanation: "ILOVEYOU overwrote image and music files and re-mailed itself to every Outlook contact.",
     },
     {
       id: "nlc_028",
@@ -1234,7 +1234,7 @@ export const STUDY_DATA: { questions: Question[]; flashcards: Flashcard[] } = {
       question: "Code Red (2001) targeted which specific software?",
       options: ["Apache HTTP Server", "Microsoft IIS", "Nginx", "Tomcat"],
       correctAnswer: 1,
-      explanation: "NLC practice question - review topic for details.",
+      explanation: "Code Red targeted Microsoft IIS via a buffer overflow in the Indexing Service ISAPI filter.",
     },
     {
       id: "nlc_029",
@@ -1242,7 +1242,7 @@ export const STUDY_DATA: { questions: Question[]; flashcards: Flashcard[] } = {
       question: "The primary action of the Code Red worm was:",
       options: ["Defaced target websites and launched DDoS attacks against the White House IP", "Stole credit card numbers", "Spread via USB drives", "Encrypted system files"],
       correctAnswer: 0,
-      explanation: "NLC practice question - review topic for details.",
+      explanation: "Code Red defaced websites and launched a DDoS against whitehouse.gov.",
     },
     {
       id: "nlc_030",
@@ -1250,7 +1250,7 @@ export const STUDY_DATA: { questions: Question[]; flashcards: Flashcard[] } = {
       question: "Nimda (2001) was unique because it:",
       options: ["Only affected Linux systems", "Used multiple infection vectors including email, network shares, and website uploads", "Was the first ransomware", "Targeted mobile phones"],
       correctAnswer: 1,
-      explanation: "NLC practice question - review topic for details.",
+      explanation: "Nimda used multiple infection vectors: email, network shares, IIS vulnerabilities, and Code Red backdoors.",
     },
     {
       id: "nlc_031",
@@ -1258,7 +1258,7 @@ export const STUDY_DATA: { questions: Question[]; flashcards: Flashcard[] } = {
       question: "MyDoom (2004) was primarily known for:",
       options: ["Being the fastest-spreading email worm at the time", "Targeting government databases only", "Encrypting user files", "Destroying hardware"],
       correctAnswer: 0,
-      explanation: "NLC practice question - review topic for details.",
+      explanation: "MyDoom was the fastest-spreading email worm of its time.",
     },
     {
       id: "nlc_032",
@@ -1266,7 +1266,7 @@ export const STUDY_DATA: { questions: Question[]; flashcards: Flashcard[] } = {
       question: "The Sasser worm (2004) exploited which Windows vulnerability?",
       options: ["RPC DCOM buffer overflow", "LSASS buffer overflow", "Workstation Service overflow", "SMBv1 vulnerability"],
       correctAnswer: 1,
-      explanation: "NLC practice question - review topic for details.",
+      explanation: "Sasser exploited the LSASS buffer overflow (MS04-011).",
     },
     {
       id: "nlc_033",
@@ -1274,7 +1274,7 @@ export const STUDY_DATA: { questions: Question[]; flashcards: Flashcard[] } = {
       question: "Unlike many worms, Sasser was notable because it:",
       options: ["Required no user interaction - it spread simply by infecting vulnerable network ports", "Required the user to open an attachment", "Only spread via email", "Was removable by restarting"],
       correctAnswer: 0,
-      explanation: "NLC practice question - review topic for details.",
+      explanation: "Sasser spread automatically over the network with no user interaction required.",
     },
     {
       id: "nlc_034",
@@ -1282,7 +1282,7 @@ export const STUDY_DATA: { questions: Question[]; flashcards: Flashcard[] } = {
       question: "The Storm Worm (2007) was distinctive because:",
       options: ["It was the first known polymorphic worm", "It formed one of the largest known botnets using peer-to-peer command and control", "It only targeted financial institutions", "It was created by a government"],
       correctAnswer: 1,
-      explanation: "NLC practice question - review topic for details.",
+      explanation: "Storm formed a large peer-to-peer botnet using fast-flux hosting.",
     },
     {
       id: "nlc_035",
@@ -1290,7 +1290,7 @@ export const STUDY_DATA: { questions: Question[]; flashcards: Flashcard[] } = {
       question: "The Morris Worm was created by:",
       options: ["Kevin Mitnick", "Robert Tappan Morris", "Adrian Lamo", "Gary McKinnon"],
       correctAnswer: 1,
-      explanation: "NLC practice question - review topic for details.",
+      explanation: "Robert Tappan Morris, a Cornell graduate student, created the Morris Worm.",
     },
     {
       id: "nlc_036",
@@ -1298,7 +1298,7 @@ export const STUDY_DATA: { questions: Question[]; flashcards: Flashcard[] } = {
       question: "Which of the following is TRUE about the Melissa virus and the ILOVEYOU worm?",
       options: ["Both targeted Linux systems", "Both required physical access", "Both spread via email", "Both were created in 1999"],
       correctAnswer: 2,
-      explanation: "NLC practice question - review topic for details.",
+      explanation: "Both Melissa and ILOVEYOU spread primarily through email.",
     },
     {
       id: "nlc_037",
@@ -1314,7 +1314,7 @@ export const STUDY_DATA: { questions: Question[]; flashcards: Flashcard[] } = {
       question: "The SQL Slammer worm (2003) was notable for:",
       options: ["Being the slowest-spreading worm ever", "Causing massive internet slowdowns within 10 minutes", "Targeting personal email accounts", "Destroying hardware"],
       correctAnswer: 1,
-      explanation: "NLC practice question - review topic for details.",
+      explanation: "SQL Slammer infected tens of thousands of hosts within 10 minutes.",
     },
     {
       id: "nlc_039",
@@ -1322,7 +1322,7 @@ export const STUDY_DATA: { questions: Question[]; flashcards: Flashcard[] } = {
       question: "Nimda name was derived from:",
       options: ["The virus author daughter", "The word admin spelled backwards", "A military term", "An acronym for Network Intrusion Detection Agent"],
       correctAnswer: 1,
-      explanation: "NLC practice question - review topic for details.",
+      explanation: "Nimda is \"admin\" spelled backwards.",
     },
     {
       id: "nlc_040",
@@ -1330,7 +1330,7 @@ export const STUDY_DATA: { questions: Question[]; flashcards: Flashcard[] } = {
       question: "The primary challenge of symmetric encryption is:",
       options: ["Slow performance", "Key distribution", "Weak algorithms", "Short key lengths"],
       correctAnswer: 1,
-      explanation: "NLC practice question - review topic for details.",
+      explanation: "Symmetric encryption uses one shared key, so key distribution is the main challenge.",
     },
     {
       id: "nlc_041",
@@ -1338,7 +1338,7 @@ export const STUDY_DATA: { questions: Question[]; flashcards: Flashcard[] } = {
       question: "Which symmetric block cipher operates on 64-bit blocks with a 56-bit key?",
       options: ["AES", "Blowfish", "DES", "ChaCha20"],
       correctAnswer: 2,
-      explanation: "NLC practice question - review topic for details.",
+      explanation: "DES operates on 64-bit blocks with a 56-bit key.",
     },
     {
       id: "nlc_042",
@@ -1346,7 +1346,7 @@ export const STUDY_DATA: { questions: Question[]; flashcards: Flashcard[] } = {
       question: "Triple DES (3DES) applies the DES algorithm how many times?",
       options: ["2 times", "3 times", "4 times", "1.5 times"],
       correctAnswer: 1,
-      explanation: "NLC practice question - review topic for details.",
+      explanation: "3DES applies DES three times.",
     },
     {
       id: "nlc_043",
@@ -1354,7 +1354,7 @@ export const STUDY_DATA: { questions: Question[]; flashcards: Flashcard[] } = {
       question: "The effective key length of 3DES using three independent keys is:",
       options: ["56 bits", "112 bits", "168 bits", "256 bits"],
       correctAnswer: 2,
-      explanation: "NLC practice question - review topic for details.",
+      explanation: "3DES with three independent keys has an effective key length of 112 bits.",
     },
     {
       id: "nlc_044",
@@ -1362,7 +1362,7 @@ export const STUDY_DATA: { questions: Question[]; flashcards: Flashcard[] } = {
       question: "AES supports which of the following key sizes?",
       options: ["128, 192, and 256 bits", "64, 128, and 256 bits", "128 bits only", "256 bits only"],
       correctAnswer: 0,
-      explanation: "NLC practice question - review topic for details.",
+      explanation: "AES supports 128, 192, and 256-bit keys.",
     },
     {
       id: "nlc_045",
@@ -1370,7 +1370,7 @@ export const STUDY_DATA: { questions: Question[]; flashcards: Flashcard[] } = {
       question: "In asymmetric encryption, the public key is used to:",
       options: ["Decrypt messages", "Sign documents", "Encrypt messages for the owner", "Generate symmetric keys only"],
       correctAnswer: 2,
-      explanation: "NLC practice question - review topic for details.",
+      explanation: "The public key encrypts messages for the owner of the corresponding private key.",
     },
     {
       id: "nlc_046",
@@ -1378,7 +1378,7 @@ export const STUDY_DATA: { questions: Question[]; flashcards: Flashcard[] } = {
       question: "RSA encryption is based on the mathematical difficulty of:",
       options: ["Solving discrete logarithms", "Factoring large prime products", "Inverting hash functions", "Reversing substitution ciphers"],
       correctAnswer: 1,
-      explanation: "NLC practice question - review topic for details.",
+      explanation: "RSA relies on the difficulty of factoring the product of two large primes.",
     },
     {
       id: "nlc_047",
@@ -1386,7 +1386,7 @@ export const STUDY_DATA: { questions: Question[]; flashcards: Flashcard[] } = {
       question: "Diffie-Hellman key exchange is used to:",
       options: ["Encrypt large files efficiently", "Securely establish a shared secret over an insecure channel", "Generate digital signatures", "Hash passwords"],
       correctAnswer: 1,
-      explanation: "NLC practice question - review topic for details.",
+      explanation: "Diffie-Hellman establishes a shared secret over an insecure channel without transmitting it.",
     },
     {
       id: "nlc_048",
@@ -1394,7 +1394,7 @@ export const STUDY_DATA: { questions: Question[]; flashcards: Flashcard[] } = {
       question: "A hash function is considered cryptographically secure if it has all of the following properties EXCEPT:",
       options: ["Deterministic output", "Fast computation", "Pre-image resistance", "Reversibility"],
       correctAnswer: 3,
-      explanation: "NLC practice question - review topic for details.",
+      explanation: "Reversibility is not a property of a secure hash function.",
     },
     {
       id: "nlc_049",
@@ -1402,7 +1402,7 @@ export const STUDY_DATA: { questions: Question[]; flashcards: Flashcard[] } = {
       question: "SHA-256 produces a hash output of how many bits?",
       options: ["128 bits", "160 bits", "256 bits", "512 bits"],
       correctAnswer: 2,
-      explanation: "NLC practice question - review topic for details.",
+      explanation: "SHA-256 produces a 256-bit hash output.",
     },
     {
       id: "nlc_050",
@@ -1410,7 +1410,7 @@ export const STUDY_DATA: { questions: Question[]; flashcards: Flashcard[] } = {
       question: "Which hashing algorithm has been deprecated for security purposes due to collision attacks?",
       options: ["SHA-256", "SHA-3", "MD5", "BLAKE2"],
       correctAnswer: 2,
-      explanation: "NLC practice question - review topic for details.",
+      explanation: "MD5 has known collision attacks and is deprecated for security use.",
     },
     {
       id: "nlc_051",
@@ -1418,7 +1418,7 @@ export const STUDY_DATA: { questions: Question[]; flashcards: Flashcard[] } = {
       question: "PKI stands for:",
       options: ["Private Key Infrastructure", "Public Key Infrastructure", "Primary Key Integration", "Protected Key Incorporation"],
       correctAnswer: 1,
-      explanation: "NLC practice question - review topic for details.",
+      explanation: "PKI = Public Key Infrastructure.",
     },
     {
       id: "nlc_052",
@@ -1426,7 +1426,7 @@ export const STUDY_DATA: { questions: Question[]; flashcards: Flashcard[] } = {
       question: "A digital certificate binds a public key to:",
       options: ["A private key", "An identity (person, server, or organization)", "A symmetric key", "A hash value"],
       correctAnswer: 1,
-      explanation: "NLC practice question - review topic for details.",
+      explanation: "A certificate binds a public key to an identity, vouched for by a CA.",
     },
     {
       id: "nlc_053",
@@ -1434,7 +1434,7 @@ export const STUDY_DATA: { questions: Question[]; flashcards: Flashcard[] } = {
       question: "Which protocol provides email encryption and digital signatures?",
       options: ["SSL", "SSH", "S/MIME", "IPsec"],
       correctAnswer: 2,
-      explanation: "NLC practice question - review topic for details.",
+      explanation: "S/MIME provides email encryption and digital signatures.",
     },
     {
       id: "nlc_054",
@@ -1442,7 +1442,7 @@ export const STUDY_DATA: { questions: Question[]; flashcards: Flashcard[] } = {
       question: "The CRL in PKI stands for:",
       options: ["Crypto Registration List", "Certificate Revocation List", "Client Request Log", "Certificate Renewal Log"],
       correctAnswer: 1,
-      explanation: "NLC practice question - review topic for details.",
+      explanation: "CRL = Certificate Revocation List.",
     },
     {
       id: "nlc_055",
@@ -1450,7 +1450,7 @@ export const STUDY_DATA: { questions: Question[]; flashcards: Flashcard[] } = {
       question: "AES in CBC mode differs from ECB mode because:",
       options: ["CBC is faster", "CBC chains blocks together so identical plaintext blocks produce different ciphertext", "CBC uses shorter keys", "ECB is more secure"],
       correctAnswer: 1,
-      explanation: "NLC practice question - review topic for details.",
+      explanation: "CBC chains blocks so identical plaintext blocks produce different ciphertext; ECB does not.",
     },
     {
       id: "nlc_056",
@@ -1458,7 +1458,7 @@ export const STUDY_DATA: { questions: Question[]; flashcards: Flashcard[] } = {
       question: "HMAC stands for:",
       options: ["Hybrid Message Authentication Code", "Hash-based Message Authentication Code", "High-security Medium Access Code", "Hashed Model Access Certification"],
       correctAnswer: 1,
-      explanation: "NLC practice question - review topic for details.",
+      explanation: "HMAC = Hash-based Message Authentication Code.",
     },
     {
       id: "nlc_057",
@@ -1466,7 +1466,7 @@ export const STUDY_DATA: { questions: Question[]; flashcards: Flashcard[] } = {
       question: "Perfect Forward Secrecy ensures that:",
       options: ["All packets are forwarded securely", "Compromise of long-term keys does not expose past session keys", "Data can never be lost", "Sessions are permanently authenticated"],
       correctAnswer: 1,
-      explanation: "NLC practice question - review topic for details.",
+      explanation: "Compromise of long-term keys does not expose past session keys.",
     },
     {
       id: "nlc_058",
@@ -1474,7 +1474,7 @@ export const STUDY_DATA: { questions: Question[]; flashcards: Flashcard[] } = {
       question: "A digital signature is created by:",
       options: ["Encrypting the message with the recipient public key", "Encrypting a hash of the message with the sender private key", "Encrypting the message with a symmetric key", "Hashing the message with the sender public key"],
       correctAnswer: 1,
-      explanation: "NLC practice question - review topic for details.",
+      explanation: "A digital signature hashes the message and encrypts the hash with the sender's private key.",
     },
     {
       id: "nlc_059",
@@ -1482,7 +1482,7 @@ export const STUDY_DATA: { questions: Question[]; flashcards: Flashcard[] } = {
       question: "Which hashing algorithm produces a 160-bit digest?",
       options: ["SHA-1", "SHA-256", "MD5", "SHA-384"],
       correctAnswer: 0,
-      explanation: "NLC practice question - review topic for details.",
+      explanation: "SHA-1 produces a 160-bit digest.",
     },
     {
       id: "nlc_060",
@@ -1490,7 +1490,7 @@ export const STUDY_DATA: { questions: Question[]; flashcards: Flashcard[] } = {
       question: "A Message Authentication Code (MAC) provides:",
       options: ["Confidentiality only", "Integrity and authenticity", "Non-repudiation", "Key distribution"],
       correctAnswer: 1,
-      explanation: "NLC practice question - review topic for details.",
+      explanation: "A MAC provides integrity and authenticity using a shared secret.",
     },
     {
       id: "nlc_061",
@@ -1498,7 +1498,7 @@ export const STUDY_DATA: { questions: Question[]; flashcards: Flashcard[] } = {
       question: "OCSP is used in PKI to:",
       options: ["Encrypt certificates", "Check certificate revocation status in real time", "Generate private keys", "Distribute public keys"],
       correctAnswer: 1,
-      explanation: "NLC practice question - review topic for details.",
+      explanation: "OCSP checks certificate revocation status in real time.",
     },
     {
       id: "nlc_062",
@@ -1506,7 +1506,7 @@ export const STUDY_DATA: { questions: Question[]; flashcards: Flashcard[] } = {
       question: "Which AES mode provides both confidentiality and authentication?",
       options: ["CBC", "ECB", "GCM", "OFB"],
       correctAnswer: 2,
-      explanation: "NLC practice question - review topic for details.",
+      explanation: "GCM provides both confidentiality and authentication.",
     },
     {
       id: "nlc_063",
@@ -1514,7 +1514,7 @@ export const STUDY_DATA: { questions: Question[]; flashcards: Flashcard[] } = {
       question: "A Key Derivation Function (KDF) is used to:",
       options: ["Generate public keys", "Derive cryptographic keys from passwords or shared secrets", "Encrypt certificates", "Validate signed documents"],
       correctAnswer: 1,
-      explanation: "NLC practice question - review topic for details.",
+      explanation: "A KDF derives cryptographic keys from passwords or shared secrets.",
     },
     {
       id: "nlc_064",
@@ -1522,7 +1522,7 @@ export const STUDY_DATA: { questions: Question[]; flashcards: Flashcard[] } = {
       question: "PBKDF2 is commonly used for:",
       options: ["Accelerating hash computations", "Password hashing with iterations and salts", "Generating random numbers", "File encryption"],
       correctAnswer: 1,
-      explanation: "NLC practice question - review topic for details.",
+      explanation: "PBKDF2 is used for password hashing with iterations and salts.",
     },
     {
       id: "nlc_065",
@@ -1530,7 +1530,7 @@ export const STUDY_DATA: { questions: Question[]; flashcards: Flashcard[] } = {
       question: "Port 110 is associated with which email protocol?",
       options: ["SMTP", "IMAP", "POP3", "SMTPS"],
       correctAnswer: 2,
-      explanation: "NLC practice question - review topic for details.",
+      explanation: "Port 110 is POP3.",
     },
     {
       id: "nlc_066",
@@ -1538,7 +1538,7 @@ export const STUDY_DATA: { questions: Question[]; flashcards: Flashcard[] } = {
       question: "Port 139 is used by which protocol?",
       options: ["HTTP", "NetBIOS Session Service", "HTTPS", "FTP"],
       correctAnswer: 1,
-      explanation: "NLC practice question - review topic for details.",
+      explanation: "Port 139 is NetBIOS Session Service.",
     },
     {
       id: "nlc_067",
@@ -1546,7 +1546,7 @@ export const STUDY_DATA: { questions: Question[]; flashcards: Flashcard[] } = {
       question: "PPTP VPN connections use which port?",
       options: ["1701", "1723", "4500", "500"],
       correctAnswer: 1,
-      explanation: "NLC practice question - review topic for details.",
+      explanation: "PPTP uses port 1723.",
     },
     {
       id: "nlc_068",
@@ -1554,7 +1554,7 @@ export const STUDY_DATA: { questions: Question[]; flashcards: Flashcard[] } = {
       question: "Port 636 is the default for:",
       options: ["IMAPS", "LDAPS", "POP3S", "SMTPS"],
       correctAnswer: 1,
-      explanation: "NLC practice question - review topic for details.",
+      explanation: "Port 636 is LDAPS.",
     },
     {
       id: "nlc_069",
@@ -1562,7 +1562,7 @@ export const STUDY_DATA: { questions: Question[]; flashcards: Flashcard[] } = {
       question: "NetBIOS Name Service uses which port?",
       options: ["137", "138", "139", "445"],
       correctAnswer: 0,
-      explanation: "NLC practice question - review topic for details.",
+      explanation: "NetBIOS Name Service uses UDP port 137.",
     },
     {
       id: "nlc_070",
@@ -1570,7 +1570,7 @@ export const STUDY_DATA: { questions: Question[]; flashcards: Flashcard[] } = {
       question: "Port 445 is used for:",
       options: ["SMB over IP", "NetBIOS", "RDP", "SIP"],
       correctAnswer: 0,
-      explanation: "NLC practice question - review topic for details.",
+      explanation: "Port 445 is used for SMB over IP (direct TCP SMB, without NetBIOS).",
     },
     {
       id: "nlc_071",
@@ -1578,7 +1578,7 @@ export const STUDY_DATA: { questions: Question[]; flashcards: Flashcard[] } = {
       question: "An attacker on a local network sends unsolicited ARP reply packets mapping their MAC to the gateway IP. Which attack?",
       options: ["DNS cache poisoning", "ARP poisoning (MITM)", "Evil twin attack", "Session hijacking"],
       correctAnswer: 1,
-      explanation: "NLC practice question - review topic for details.",
+      explanation: "ARP poisoning (ARP spoofing) is a man-in-the-middle attack where the attacker sends falsified ARP messages to associate their MAC address with a target's IP.",
     },
     {
       id: "nlc_072",
@@ -1586,7 +1586,7 @@ export const STUDY_DATA: { questions: Question[]; flashcards: Flashcard[] } = {
       question: "Before a device can communicate on the corporate network, it must authenticate through the switch port to a RADIUS server. Which standard?",
       options: ["WPA3", "802.1X", "802.11ac", "DNSSEC"],
       correctAnswer: 1,
-      explanation: "NLC practice question - review topic for details.",
+      explanation: "802.1X is the IEEE standard for port-based network access control.",
     },
     {
       id: "nlc_073",
@@ -1594,7 +1594,7 @@ export const STUDY_DATA: { questions: Question[]; flashcards: Flashcard[] } = {
       question: "A database adds a unique random value to each password before hashing. This PRIMARILY prevents:",
       options: ["Brute force", "Phishing", "Rainbow table attacks", "Replay attacks"],
       correctAnswer: 2,
-      explanation: "NLC practice question - review topic for details.",
+      explanation: "Salting prevents rainbow table attacks on hashed passwords.",
     },
     {
       id: "nlc_074",
@@ -1602,7 +1602,7 @@ export const STUDY_DATA: { questions: Question[]; flashcards: Flashcard[] } = {
       question: "A VPN generates unique session keys for every connection. Even if the server key is compromised, past sessions remain secure. Which property?",
       options: ["Non-repudiation", "Perfect forward secrecy", "Key escrow", "Certificate pinning"],
       correctAnswer: 1,
-      explanation: "NLC practice question - review topic for details.",
+      explanation: "Unique session keys mean a compromised server key does not expose past traffic.",
     },
     {
       id: "nlc_075",
@@ -1610,7 +1610,7 @@ export const STUDY_DATA: { questions: Question[]; flashcards: Flashcard[] } = {
       question: "DNS amplification attacks exploit which characteristic?",
       options: ["DNS uses TCP", "Small queries can generate large responses", "DNS is encrypted", "DNS resolves slowly"],
       correctAnswer: 1,
-      explanation: "NLC practice question - review topic for details.",
+      explanation: "DNS amplification exploits resolvers that return much larger responses than requests.",
     },
     {
       id: "nlc_076",
@@ -1618,7 +1618,7 @@ export const STUDY_DATA: { questions: Question[]; flashcards: Flashcard[] } = {
       question: "Two parties establish a shared key over an insecure channel without transmitting the key itself. Which?",
       options: ["RSA key exchange", "Diffie-Hellman", "AES key wrapping", "SHA-256"],
       correctAnswer: 1,
-      explanation: "NLC practice question - review topic for details.",
+      explanation: "Diffie-Hellman key exchange.",
     },
     {
       id: "nlc_077",
@@ -1626,7 +1626,7 @@ export const STUDY_DATA: { questions: Question[]; flashcards: Flashcard[] } = {
       question: "AES (Rijndael) was selected as the standard encryption algorithm through a process managed by:",
       options: ["IETF", "NIST", "IEEE", "ISO"],
       correctAnswer: 1,
-      explanation: "NLC practice question - review topic for details.",
+      explanation: "AES was selected through a public NIST competition.",
     },
     {
       id: "nlc_078",
@@ -1634,7 +1634,7 @@ export const STUDY_DATA: { questions: Question[]; flashcards: Flashcard[] } = {
       question: "Which of the following is a stream cipher?",
       options: ["AES", "Blowfish", "RC4", "3DES"],
       correctAnswer: 2,
-      explanation: "NLC practice question - review topic for details.",
+      explanation: "RC4 is a stream cipher.",
     },
     {
       id: "nlc_079",
@@ -1642,7 +1642,7 @@ export const STUDY_DATA: { questions: Question[]; flashcards: Flashcard[] } = {
       question: "A cipher that operates on fixed-size blocks of plaintext is a:",
       options: ["Stream cipher", "Block cipher", "Hash function", "MAC function"],
       correctAnswer: 1,
-      explanation: "NLC practice question - review topic for details.",
+      explanation: "A block cipher operates on fixed-size blocks of plaintext.",
     },
     {
       id: "nlc_080",
@@ -1650,7 +1650,7 @@ export const STUDY_DATA: { questions: Question[]; flashcards: Flashcard[] } = {
       question: "Twofish is best classified as a:",
       options: ["Stream cipher", "Symmetric block cipher", "Asymmetric algorithm", "Hash function"],
       correctAnswer: 1,
-      explanation: "NLC practice question - review topic for details.",
+      explanation: "Twofish is a symmetric block cipher.",
     },
     {
       id: "nlc_081",
@@ -1658,7 +1658,7 @@ export const STUDY_DATA: { questions: Question[]; flashcards: Flashcard[] } = {
       question: "Which of the following is a key stretching algorithm?",
       options: ["MD5", "SHA-256", "bcrypt", "AES"],
       correctAnswer: 2,
-      explanation: "NLC practice question - review topic for details.",
+      explanation: "bcrypt, PBKDF2, and Argon2 are key stretching algorithms.",
     },
     {
       id: "nlc_082",
@@ -1666,7 +1666,7 @@ export const STUDY_DATA: { questions: Question[]; flashcards: Flashcard[] } = {
       question: "The primary vulnerability of the WEP protocol was:",
       options: ["Short IV (Initialization Vector) leading to key recovery", "No encryption algorithm", "Overly long keys", "Use of asymmetric cryptography"],
       correctAnswer: 0,
-      explanation: "NLC practice question - review topic for details.",
+      explanation: "WEP's weak key scheduling and short IVs enable key recovery attacks.",
     },
     {
       id: "nlc_083",
@@ -1674,7 +1674,7 @@ export const STUDY_DATA: { questions: Question[]; flashcards: Flashcard[] } = {
       question: "Before a device can communicate on the corporate network, it must authenticate through the switch port to a central server. Which IEEE standard governs this port-based NAC?",
       options: ["WPA3", "802.1X", "802.11ac", "DNSSEC"],
       correctAnswer: 1,
-      explanation: "NLC practice question - review topic for details.",
+      explanation: "802.1X port-based authentication.",
     },
     {
       id: "nlc_084",
@@ -1682,7 +1682,7 @@ export const STUDY_DATA: { questions: Question[]; flashcards: Flashcard[] } = {
       question: "RPO (Recovery Point Objective) measures which of the following?",
       options: ["Maximum acceptable downtime", "Maximum acceptable data loss measured in time", "Time to detect an incident", "Cost of recovery per hour"],
       correctAnswer: 1,
-      explanation: "NLC practice question - review topic for details.",
+      explanation: "RPO measures maximum acceptable data loss.",
     },
     {
       id: "nlc_085",
@@ -1690,7 +1690,7 @@ export const STUDY_DATA: { questions: Question[]; flashcards: Flashcard[] } = {
       question: "RTO (Recovery Time Objective) is best defined as:",
       options: ["How much data loss is acceptable", "How quickly systems must be restored after a disaster", "The cost of downtime per hour", "The time between backup cycles"],
       correctAnswer: 1,
-      explanation: "NLC practice question - review topic for details.",
+      explanation: "RTO is maximum acceptable downtime.",
     },
     {
       id: "nlc_086",
@@ -1698,7 +1698,7 @@ export const STUDY_DATA: { questions: Question[]; flashcards: Flashcard[] } = {
       question: "An organization determines it can tolerate losing up to 4 hours of transaction data. This is:",
       options: ["RTO = 4 hours", "RPO = 4 hours", "MTTR = 4 hours", "ALE = 4 hours"],
       correctAnswer: 1,
-      explanation: "NLC practice question - review topic for details.",
+      explanation: "Backups should run at least every 4 hours.",
     },
     {
       id: "nlc_087",
@@ -1706,7 +1706,7 @@ export const STUDY_DATA: { questions: Question[]; flashcards: Flashcard[] } = {
       question: "A hot site is characterized by:",
       options: ["Fully operational systems ready for immediate failover within minutes", "Partially equipped space requiring weeks to activate", "No pre-configured hardware, only environmental controls", "Warm backup data but no hardware"],
       correctAnswer: 0,
-      explanation: "NLC practice question - review topic for details.",
+      explanation: "A hot site is fully equipped and ready immediately.",
     },
     {
       id: "nlc_088",
@@ -1714,7 +1714,7 @@ export const STUDY_DATA: { questions: Question[]; flashcards: Flashcard[] } = {
       question: "A warm site differs from a hot site in that it:",
       options: ["Has no electrical power", "Has hardware installed but requires data restoration and configuration", "Is also known as a cold site", "Is located in a different country"],
       correctAnswer: 1,
-      explanation: "NLC practice question - review topic for details.",
+      explanation: "A warm site has equipment but needs configuration and data restore.",
     },
     {
       id: "nlc_089",
@@ -1722,7 +1722,7 @@ export const STUDY_DATA: { questions: Question[]; flashcards: Flashcard[] } = {
       question: "A cold site provides:",
       options: ["Live backup servers", "Basic infrastructure (power, cooling) but no pre-installed hardware", "Immediate failover capability", "Duplicate production environment"],
       correctAnswer: 1,
-      explanation: "NLC practice question - review topic for details.",
+      explanation: "A cold site provides space and utilities only.",
     },
     {
       id: "nlc_090",
@@ -1730,7 +1730,7 @@ export const STUDY_DATA: { questions: Question[]; flashcards: Flashcard[] } = {
       question: "Which disaster recovery site has the longest recovery time?",
       options: ["Hot site", "Warm site", "Cold site", "Mirror site"],
       correctAnswer: 2,
-      explanation: "NLC practice question - review topic for details.",
+      explanation: "A cold site has the longest recovery time.",
     },
     {
       id: "nlc_091",
@@ -1746,7 +1746,7 @@ export const STUDY_DATA: { questions: Question[]; flashcards: Flashcard[] } = {
       question: "MTTF (Mean Time to Failure) is a measure of:",
       options: ["System reliability - average time before a component fails", "Recovery speed after disaster", "Data loss tolerance", "Incident detection time"],
       correctAnswer: 0,
-      explanation: "NLC practice question - review topic for details.",
+      explanation: "MTTF measures average time a component operates before failing — a reliability metric.",
     },
     {
       id: "nlc_093",
@@ -1754,7 +1754,7 @@ export const STUDY_DATA: { questions: Question[]; flashcards: Flashcard[] } = {
       question: "A Business Continuity Plan (BCP) differs from a Disaster Recovery Plan (DRP) because:",
       options: ["BCP is only for small businesses", "BCP covers all critical business functions, while DRP focuses on IT systems recovery", "DRP is more important than BCP", "They are the same thing"],
       correctAnswer: 1,
-      explanation: "NLC practice question - review topic for details.",
+      explanation: "BCP covers all business functions; DRP focuses on restoring IT after disaster.",
     },
     {
       id: "nlc_094",
@@ -1762,7 +1762,7 @@ export const STUDY_DATA: { questions: Question[]; flashcards: Flashcard[] } = {
       question: "Which document defines RTO and RPO targets?",
       options: ["Acceptable Use Policy", "Business Impact Analysis", "Incident Response Plan", "Security Policy"],
       correctAnswer: 1,
-      explanation: "NLC practice question - review topic for details.",
+      explanation: "A Business Impact Analysis defines RTO and RPO targets.",
     },
     {
       id: "nlc_095",
@@ -1770,7 +1770,7 @@ export const STUDY_DATA: { questions: Question[]; flashcards: Flashcard[] } = {
       question: "A Business Impact Analysis (BIA) is conducted to:",
       options: ["Penetrate the network", "Identify critical business functions and their maximum tolerable downtime", "Train employees on security awareness", "Audit financial records"],
       correctAnswer: 1,
-      explanation: "NLC practice question - review topic for details.",
+      explanation: "A BIA identifies critical functions and the impact of their disruption.",
     },
     {
       id: "nlc_096",
@@ -1778,7 +1778,7 @@ export const STUDY_DATA: { questions: Question[]; flashcards: Flashcard[] } = {
       question: "In the NIST incident response lifecycle, which phase comes FIRST?",
       options: ["Containment", "Detection", "Preparation", "Eradication"],
       correctAnswer: 2,
-      explanation: "NLC practice question - review topic for details.",
+      explanation: "Preparation is the first NIST incident response phase.",
     },
     {
       id: "nlc_097",
@@ -1786,7 +1786,7 @@ export const STUDY_DATA: { questions: Question[]; flashcards: Flashcard[] } = {
       question: "The correct order of NIST SP 800-61 incident response phases is:",
       options: ["Detect-Contain-Prepare-Recover", "Prepare-Detect-Analyze-Contain/Eradicate/Recover-Post-Incident", "Respond-Detect-Recover-Prepare", "Analyze-Contain-Prepare-Detect"],
       correctAnswer: 1,
-      explanation: "NLC practice question - review topic for details.",
+      explanation: "Preparation -> Detection & Analysis -> Containment & Eradication -> Recovery -> Post-Incident Activity.",
     },
     {
       id: "nlc_098",
@@ -1794,7 +1794,7 @@ export const STUDY_DATA: { questions: Question[]; flashcards: Flashcard[] } = {
       question: "A packet-filtering firewall operates at which OSI layer?",
       options: ["Layer 7 (Application)", "Layer 4 (Transport)", "Layer 3 (Network)", "Layer 2 (Data Link)"],
       correctAnswer: 2,
-      explanation: "NLC practice question - review topic for details.",
+      explanation: "A packet-filtering firewall operates at OSI Layers 3 and 4.",
     },
     {
       id: "nlc_099",
@@ -1802,7 +1802,7 @@ export const STUDY_DATA: { questions: Question[]; flashcards: Flashcard[] } = {
       question: "A stateful inspection firewall improves upon packet filtering by:",
       options: ["Checking payload content", "Tracking active connections and their state", "Operating at Layer 7", "Encrypting traffic"],
       correctAnswer: 1,
-      explanation: "NLC practice question - review topic for details.",
+      explanation: "A stateful firewall tracks connection state across packets.",
     },
     {
       id: "nlc_100",
@@ -1810,7 +1810,7 @@ export const STUDY_DATA: { questions: Question[]; flashcards: Flashcard[] } = {
       question: "A proxy firewall differs from a stateful firewall because it:",
       options: ["Is faster", "Operates at the application layer and terminates connections", "Cannot filter by IP address", "Does not track connection state"],
       correctAnswer: 1,
-      explanation: "NLC practice question - review topic for details.",
+      explanation: "A proxy firewall terminates and re-initiates connections on behalf of clients.",
     },
     {
       id: "nlc_101",
@@ -1818,7 +1818,7 @@ export const STUDY_DATA: { questions: Question[]; flashcards: Flashcard[] } = {
       question: "An application-layer firewall is also known as a:",
       options: ["Packet filter", "WAF (Web Application Firewall)", "IDS", "IPS"],
       correctAnswer: 1,
-      explanation: "NLC practice question - review topic for details.",
+      explanation: "An application-layer firewall is also called a proxy firewall.",
     },
     {
       id: "nlc_102",
@@ -1826,7 +1826,7 @@ export const STUDY_DATA: { questions: Question[]; flashcards: Flashcard[] } = {
       question: "A Next-Generation Firewall (NGFW) combines which features?",
       options: ["Only packet filtering", "Stateful inspection + DPI + IPS + application awareness", "Only proxy functionality", "VPN + IDS only"],
       correctAnswer: 1,
-      explanation: "NLC practice question - review topic for details.",
+      explanation: "NGFW combines firewalling with IPS, application awareness, and threat intelligence.",
     },
     {
       id: "nlc_103",
@@ -1834,7 +1834,7 @@ export const STUDY_DATA: { questions: Question[]; flashcards: Flashcard[] } = {
       question: "Deep Packet Inspection (DPI) is performed by which type of firewall?",
       options: ["Packet filtering", "Stateful", "NGFW", "Circuit-level gateway"],
       correctAnswer: 2,
-      explanation: "NLC practice question - review topic for details.",
+      explanation: "DPI is performed by next-generation and application-layer firewalls.",
     },
     {
       id: "nlc_104",
@@ -1842,7 +1842,7 @@ export const STUDY_DATA: { questions: Question[]; flashcards: Flashcard[] } = {
       question: "The primary limitation of a stateless firewall is:",
       options: ["It is too slow", "It cannot make decisions based on the context of a connection", "It cannot filter by IP address", "It only works at Layer 7"],
       correctAnswer: 1,
-      explanation: "NLC practice question - review topic for details.",
+      explanation: "A stateless firewall cannot track connection context.",
     },
     {
       id: "nlc_105",
@@ -1850,7 +1850,7 @@ export const STUDY_DATA: { questions: Question[]; flashcards: Flashcard[] } = {
       question: "WAF is primarily designed to protect against which type of attacks?",
       options: ["DDoS at Layer 3", "Layer 7 attacks like SQL injection and XSS", "Phishing emails", "Physical intrusion"],
       correctAnswer: 1,
-      explanation: "NLC practice question - review topic for details.",
+      explanation: "WAF protects against web attacks like XSS, SQL injection, and CSRF.",
     },
     {
       id: "nlc_106",
@@ -1858,7 +1858,7 @@ export const STUDY_DATA: { questions: Question[]; flashcards: Flashcard[] } = {
       question: "SPI (Stateful Packet Inspection) firewalls maintain information about:",
       options: ["User credentials", "Active network connections and their state", "File contents", "Password hashes"],
       correctAnswer: 1,
-      explanation: "NLC practice question - review topic for details.",
+      explanation: "SPI firewalls maintain state about active connections.",
     },
     {
       id: "nlc_107",
@@ -1866,7 +1866,7 @@ export const STUDY_DATA: { questions: Question[]; flashcards: Flashcard[] } = {
       question: "SPF, DKIM, and DMARC are used to:",
       options: ["Encrypt email attachments", "Authenticate email senders and prevent spoofing", "Compress email messages", "Route email between servers"],
       correctAnswer: 1,
-      explanation: "NLC practice question - review topic for details.",
+      explanation: "SPF, DKIM, and DMARC prevent email spoofing.",
     },
     {
       id: "nlc_108",
@@ -1874,7 +1874,7 @@ export const STUDY_DATA: { questions: Question[]; flashcards: Flashcard[] } = {
       question: "If an organization has an RPO of 1 hour, backups should be taken at least every:",
       options: ["Week", "Day", "Hour", "Month"],
       correctAnswer: 2,
-      explanation: "NLC practice question - review topic for details.",
+      explanation: "RPO of 1 hour means backups at least every hour.",
     },
     {
       id: "nlc_109",
@@ -1882,7 +1882,7 @@ export const STUDY_DATA: { questions: Question[]; flashcards: Flashcard[] } = {
       question: "A hot site typically achieves RTO of:",
       options: ["Days to weeks", "Hours", "Minutes or hours", "Seconds"],
       correctAnswer: 2,
-      explanation: "NLC practice question - review topic for details.",
+      explanation: "A hot site typically achieves RTO of minutes to hours.",
     },
     {
       id: "nlc_110",
@@ -1890,7 +1890,7 @@ export const STUDY_DATA: { questions: Question[]; flashcards: Flashcard[] } = {
       question: "SIEM stands for:",
       options: ["Security Information and Event Management", "Secure Internet Encryption Method", "Standard Information Exchange Model", "Systems Integration and Event Monitor"],
       correctAnswer: 0,
-      explanation: "NLC practice question - review topic for details.",
+      explanation: "SIEM = Security Information and Event Management.",
     },
     {
       id: "nlc_111",
@@ -1898,7 +1898,7 @@ export const STUDY_DATA: { questions: Question[]; flashcards: Flashcard[] } = {
       question: "A SOC (Security Operations Center) is primarily responsible for:",
       options: ["Writing application code", "Monitoring and responding to security incidents", "Human resources management", "Physical building security"],
       correctAnswer: 1,
-      explanation: "NLC practice question - review topic for details.",
+      explanation: "A SOC monitors, detects, investigates, and responds to incidents.",
     },
     {
       id: "nlc_112",
@@ -1906,7 +1906,7 @@ export const STUDY_DATA: { questions: Question[]; flashcards: Flashcard[] } = {
       question: "Change management is critical in IT security because:",
       options: ["It prevents unauthorized changes that could introduce vulnerabilities", "It ensures all changes happen quickly", "It eliminates the need for testing", "It allows anyone to make changes"],
       correctAnswer: 0,
-      explanation: "NLC practice question - review topic for details.",
+      explanation: "Change management prevents untested changes from introducing vulnerabilities.",
     },
     {
       id: "nlc_113",
@@ -1914,7 +1914,7 @@ export const STUDY_DATA: { questions: Question[]; flashcards: Flashcard[] } = {
       question: "Vulnerability scanning differs from penetration testing in that:",
       options: ["Vulnerability scanning is illegal", "Vulnerability scanning identifies weaknesses but does not actively exploit them", "Penetration testing is automated", "They are identical"],
       correctAnswer: 1,
-      explanation: "NLC practice question - review topic for details.",
+      explanation: "Vulnerability scanning finds known issues; penetration testing exploits them.",
     },
     {
       id: "nlc_114",
@@ -1922,7 +1922,7 @@ export const STUDY_DATA: { questions: Question[]; flashcards: Flashcard[] } = {
       question: "An Acceptable Use Policy (AUP) typically covers:",
       options: ["Network topology diagrams", "Rules for how employees may use company technology", "Encryption algorithms", "Disaster recovery procedures"],
       correctAnswer: 1,
-      explanation: "NLC practice question - review topic for details.",
+      explanation: "An AUP defines acceptable system use behavior.",
     },
     {
       id: "nlc_115",
@@ -1930,7 +1930,7 @@ export const STUDY_DATA: { questions: Question[]; flashcards: Flashcard[] } = {
       question: "Before a firewall rule change is applied to production, it should be:",
       options: ["Reviewed, tested in staging, and approved", "Implemented immediately during business hours", "Applied only on weekends", "Approved only by the CEO"],
       correctAnswer: 0,
-      explanation: "NLC practice question - review topic for details.",
+      explanation: "It should be tested in a staging environment first.",
     },
     {
       id: "nlc_116",
@@ -1938,7 +1938,7 @@ export const STUDY_DATA: { questions: Question[]; flashcards: Flashcard[] } = {
       question: "ALE stands for:",
       options: ["Annual Loss Expectancy", "Acceptable Level of Exposure", "Automated Log Evaluation", "Application Layer Encryption"],
       correctAnswer: 0,
-      explanation: "NLC practice question - review topic for details.",
+      explanation: "ALE = Annualized Loss Expectancy.",
     },
     {
       id: "nlc_117",
@@ -1946,7 +1946,7 @@ export const STUDY_DATA: { questions: Question[]; flashcards: Flashcard[] } = {
       question: "SLE (Single Loss Expectancy) is calculated as:",
       options: ["AV / EF", "AV x EF", "RPO x RTO", "ALE / ARO"],
       correctAnswer: 1,
-      explanation: "NLC practice question - review topic for details.",
+      explanation: "SLE = asset value x exposure factor.",
     },
     {
       id: "nlc_118",
@@ -1954,7 +1954,7 @@ export const STUDY_DATA: { questions: Question[]; flashcards: Flashcard[] } = {
       question: "Annual Rate of Occurrence (ARO) represents:",
       options: ["The cost of each incident", "The frequency of a threat per year", "The probability of attacker success", "The recovery cost"],
       correctAnswer: 1,
-      explanation: "NLC practice question - review topic for details.",
+      explanation: "ARO is the expected frequency of a risk event per year.",
     },
     {
       id: "nlc_119",
@@ -1962,7 +1962,7 @@ export const STUDY_DATA: { questions: Question[]; flashcards: Flashcard[] } = {
       question: "Which risk treatment option means continuing an activity while accepting the risk?",
       options: ["Avoid", "Transfer", "Mitigate", "Accept"],
       correctAnswer: 3,
-      explanation: "NLC practice question - review topic for details.",
+      explanation: "Risk acceptance means continuing the activity while accepting the risk.",
     },
     {
       id: "nlc_120",
@@ -1970,7 +1970,7 @@ export const STUDY_DATA: { questions: Question[]; flashcards: Flashcard[] } = {
       question: "Risk transfer is best exemplified by:",
       options: ["Implementing a firewall", "Purchasing cyber insurance", "Eliminating the risky activity", "Training employees"],
       correctAnswer: 1,
-      explanation: "NLC practice question - review topic for details.",
+      explanation: "Insurance is the classic example of risk transfer.",
     },
     {
       id: "nlc_121",
@@ -1978,7 +1978,7 @@ export const STUDY_DATA: { questions: Question[]; flashcards: Flashcard[] } = {
       question: "Residual risk is:",
       options: ["Risk before any controls", "Risk that remains after security controls are applied", "A risk that was completely eliminated", "A newly discovered vulnerability"],
       correctAnswer: 1,
-      explanation: "NLC practice question - review topic for details.",
+      explanation: "Residual risk is the risk remaining after controls are applied.",
     },
     {
       id: "nlc_122",
@@ -1986,7 +1986,7 @@ export const STUDY_DATA: { questions: Question[]; flashcards: Flashcard[] } = {
       question: "Which type of risk assessment would use High/Medium/Low ratings?",
       options: ["Quantitative", "Qualitative", "Statistical", "Algorithmic"],
       correctAnswer: 1,
-      explanation: "NLC practice question - review topic for details.",
+      explanation: "Qualitative risk assessment uses High/Medium/Low ratings.",
     },
     {
       id: "nlc_123",
@@ -1994,7 +1994,7 @@ export const STUDY_DATA: { questions: Question[]; flashcards: Flashcard[] } = {
       question: "A risk register is used to:",
       options: ["Store encrypted passwords", "Document identified risks and their mitigation status", "Track employee attendance", "Monitor network traffic"],
       correctAnswer: 1,
-      explanation: "NLC practice question - review topic for details.",
+      explanation: "A risk register tracks identified risks, owners, and responses.",
     },
     {
       id: "nlc_124",
@@ -2002,7 +2002,7 @@ export const STUDY_DATA: { questions: Question[]; flashcards: Flashcard[] } = {
       question: "A Honeypot is best described as:",
       options: ["A high-performance server", "A decoy system designed to attract and study attackers", "A type of firewall", "An intrusion detection rule"],
       correctAnswer: 1,
-      explanation: "NLC practice question - review topic for details.",
+      explanation: "A honeypot is a decoy system to attract and study attackers.",
     },
     {
       id: "nlc_125",
@@ -2010,7 +2010,7 @@ export const STUDY_DATA: { questions: Question[]; flashcards: Flashcard[] } = {
       question: "Which of the following is true about stateful vs stateless firewalls?",
       options: ["Stateless is faster but less secure", "Stateless tracks connection state", "Stateful requires less memory", "They are identical in function"],
       correctAnswer: 0,
-      explanation: "NLC practice question - review topic for details.",
+      explanation: "Stateful firewalls track connection context; stateless firewalls do not.",
     },
     {
       id: "nlc_126",
@@ -2018,7 +2018,7 @@ export const STUDY_DATA: { questions: Question[]; flashcards: Flashcard[] } = {
       question: "Which NIST CSF function involves developing safeguards?",
       options: ["Identify", "Protect", "Detect", "Respond"],
       correctAnswer: 1,
-      explanation: "NLC practice question - review topic for details.",
+      explanation: "Protect develops safeguards.",
     },
     {
       id: "nlc_127",
@@ -2026,7 +2026,7 @@ export const STUDY_DATA: { questions: Question[]; flashcards: Flashcard[] } = {
       question: "Which NIST CSF function involves taking action on a detected incident?",
       options: ["Identify", "Protect", "Detect", "Respond"],
       correctAnswer: 3,
-      explanation: "NLC practice question - review topic for details.",
+      explanation: "Respond takes action on detected incidents.",
     },
     {
       id: "nlc_128",
@@ -2034,7 +2034,7 @@ export const STUDY_DATA: { questions: Question[]; flashcards: Flashcard[] } = {
       question: "Which NIST CSF function involves restoring capabilities after an incident?",
       options: ["Respond", "Recover", "Detect", "Protect"],
       correctAnswer: 1,
-      explanation: "NLC practice question - review topic for details.",
+      explanation: "Recover restores capabilities after an incident.",
     },
     {
       id: "nlc_129",
@@ -2042,7 +2042,7 @@ export const STUDY_DATA: { questions: Question[]; flashcards: Flashcard[] } = {
       question: "ISO 27001 is a standard for:",
       options: ["Information Security Management Systems (ISMS)", "Firewall configuration", "Penetration testing", "Malware development"],
       correctAnswer: 0,
-      explanation: "NLC practice question - review topic for details.",
+      explanation: "ISO 27001 is a standard for information security management systems.",
     },
     {
       id: "nlc_130",
@@ -2050,7 +2050,7 @@ export const STUDY_DATA: { questions: Question[]; flashcards: Flashcard[] } = {
       question: "NIST SP 800-53 provides:",
       options: ["A catalog of security and privacy controls", "Network speed standards", "Firewall vendor rankings", "Malware taxonomy"],
       correctAnswer: 0,
-      explanation: "NLC practice question - review topic for details.",
+      explanation: "NIST SP 800-53 provides security controls for federal information systems.",
     },
     {
       id: "nlc_131",
@@ -2058,7 +2058,7 @@ export const STUDY_DATA: { questions: Question[]; flashcards: Flashcard[] } = {
       question: "RAID 0 is also known as:",
       options: ["Disk Mirroring", "Disk Striping", "Disk Striping with Parity", "Disk Duplexing"],
       correctAnswer: 1,
-      explanation: "NLC practice question - review topic for details.",
+      explanation: "RAID 0 is disk striping — data is split across drives with no redundancy.",
     },
     {
       id: "nlc_132",
@@ -2066,7 +2066,7 @@ export const STUDY_DATA: { questions: Question[]; flashcards: Flashcard[] } = {
       question: "RAID 0 provides which of the following?",
       options: ["Fault tolerance", "Data redundancy", "Improved read/write performance with no fault tolerance", "Hot-swappable drives"],
       correctAnswer: 2,
-      explanation: "NLC practice question - review topic for details.",
+      explanation: "RAID 0 improves read/write performance but provides no fault tolerance.",
     },
     {
       id: "nlc_133",
@@ -2074,7 +2074,7 @@ export const STUDY_DATA: { questions: Question[]; flashcards: Flashcard[] } = {
       question: "RAID 1 is also known as:",
       options: ["Disk Striping", "Disk Mirroring", "Disk Striping with Parity", "Disk Concatenation"],
       correctAnswer: 1,
-      explanation: "NLC practice question - review topic for details.",
+      explanation: "RAID 1 is disk mirroring — identical data is written to two drives.",
     },
     {
       id: "nlc_134",
@@ -2082,7 +2082,7 @@ export const STUDY_DATA: { questions: Question[]; flashcards: Flashcard[] } = {
       question: "RAID 1 provides fault tolerance of:",
       options: ["No fault tolerance", "Can survive one disk failure per mirrored pair", "Can survive any number of disk failures", "Can survive all disks failing"],
       correctAnswer: 1,
-      explanation: "NLC practice question - review topic for details.",
+      explanation: "RAID 1 can survive one disk failure per mirrored pair.",
     },
     {
       id: "nlc_135",
@@ -2090,7 +2090,7 @@ export const STUDY_DATA: { questions: Question[]; flashcards: Flashcard[] } = {
       question: "RAID 5 is best described as:",
       options: ["Disk Mirroring", "Disk Striping with Distributed Parity", "Disk Striping without redundancy", "Disk Mirroring with Striping"],
       correctAnswer: 1,
-      explanation: "NLC practice question - review topic for details.",
+      explanation: "RAID 5 uses disk striping with distributed parity across all drives.",
     },
     {
       id: "nlc_136",
@@ -2098,7 +2098,7 @@ export const STUDY_DATA: { questions: Question[]; flashcards: Flashcard[] } = {
       question: "RAID 5 requires a minimum of how many disks?",
       options: ["2", "3", "4", "5"],
       correctAnswer: 1,
-      explanation: "NLC practice question - review topic for details.",
+      explanation: "RAID 5 requires a minimum of 3 disks.",
     },
     {
       id: "nlc_137",
@@ -2106,7 +2106,7 @@ export const STUDY_DATA: { questions: Question[]; flashcards: Flashcard[] } = {
       question: "RAID 5 can survive the failure of how many disks?",
       options: ["0", "1", "2", "All"],
       correctAnswer: 1,
-      explanation: "NLC practice question - review topic for details.",
+      explanation: "RAID 5 can survive one disk failure.",
     },
     {
       id: "nlc_138",
@@ -2114,7 +2114,7 @@ export const STUDY_DATA: { questions: Question[]; flashcards: Flashcard[] } = {
       question: "RAID 10 combines which two RAID levels?",
       options: ["RAID 0 + RAID 1 (Striping + Mirroring)", "RAID 0 + RAID 5", "RAID 1 + RAID 5", "RAID 1 + RAID 2"],
       correctAnswer: 0,
-      explanation: "NLC practice question - review topic for details.",
+      explanation: "RAID 10 combines RAID 1 (mirroring) and RAID 0 (striping).",
     },
     {
       id: "nlc_139",
@@ -2122,7 +2122,7 @@ export const STUDY_DATA: { questions: Question[]; flashcards: Flashcard[] } = {
       question: "RAID 10 requires a minimum of how many disks?",
       options: ["2", "3", "4", "6"],
       correctAnswer: 2,
-      explanation: "NLC practice question - review topic for details.",
+      explanation: "RAID 10 requires a minimum of 4 disks.",
     },
     {
       id: "nlc_140",
@@ -2130,7 +2130,7 @@ export const STUDY_DATA: { questions: Question[]; flashcards: Flashcard[] } = {
       question: "Which RAID level provides the best write performance?",
       options: ["RAID 1", "RAID 5", "RAID 0", "RAID 6"],
       correctAnswer: 2,
-      explanation: "NLC practice question - review topic for details.",
+      explanation: "RAID 0 provides the best write performance because there is no parity calculation.",
     },
     {
       id: "nlc_141",
@@ -2138,7 +2138,7 @@ export const STUDY_DATA: { questions: Question[]; flashcards: Flashcard[] } = {
       question: "IaaS stands for:",
       options: ["Internet as a Service", "Infrastructure as a Service", "Integration as a Service", "Identity as a Service"],
       correctAnswer: 1,
-      explanation: "NLC practice question - review topic for details.",
+      explanation: "IaaS = Infrastructure as a Service.",
     },
     {
       id: "nlc_142",
@@ -2146,7 +2146,7 @@ export const STUDY_DATA: { questions: Question[]; flashcards: Flashcard[] } = {
       question: "In which cloud service model does the provider manage the OS, middleware, and runtime?",
       options: ["IaaS", "PaaS", "SaaS", "DaaS"],
       correctAnswer: 1,
-      explanation: "NLC practice question - review topic for details.",
+      explanation: "PaaS — the provider manages the OS, middleware, and runtime; the customer manages applications and data.",
     },
     {
       id: "nlc_143",
@@ -2162,7 +2162,7 @@ export const STUDY_DATA: { questions: Question[]; flashcards: Flashcard[] } = {
       question: "Which cloud service model gives the customer the MOST control over infrastructure?",
       options: ["SaaS", "PaaS", "IaaS", "FaaS"],
       correctAnswer: 2,
-      explanation: "NLC practice question - review topic for details.",
+      explanation: "IaaS gives the customer the most control over infrastructure — they manage the OS, middleware, and applications.",
     },
     {
       id: "nlc_145",
@@ -2170,7 +2170,7 @@ export const STUDY_DATA: { questions: Question[]; flashcards: Flashcard[] } = {
       question: "Which cloud service model gives the customer the LEAST control over infrastructure?",
       options: ["SaaS", "PaaS", "IaaS", "DRaaS"],
       correctAnswer: 0,
-      explanation: "NLC practice question - review topic for details.",
+      explanation: "SaaS gives the customer the least control over infrastructure.",
     },
     {
       id: "nlc_146",
@@ -2178,7 +2178,7 @@ export const STUDY_DATA: { questions: Question[]; flashcards: Flashcard[] } = {
       question: "Amazon Web Services EC2 is an example of which cloud service model?",
       options: ["SaaS", "PaaS", "IaaS", "FaaS"],
       correctAnswer: 2,
-      explanation: "NLC practice question - review topic for details.",
+      explanation: "AWS EC2 is IaaS.",
     },
     {
       id: "nlc_147",
@@ -2186,7 +2186,7 @@ export const STUDY_DATA: { questions: Question[]; flashcards: Flashcard[] } = {
       question: "Google App Engine and Heroku are examples of:",
       options: ["SaaS", "PaaS", "IaaS", "Private Cloud"],
       correctAnswer: 1,
-      explanation: "NLC practice question - review topic for details.",
+      explanation: "PaaS — Google App Engine and Heroku provide platforms for developers.",
     },
     {
       id: "nlc_148",
@@ -2194,7 +2194,7 @@ export const STUDY_DATA: { questions: Question[]; flashcards: Flashcard[] } = {
       question: "Microsoft Office 365 and Salesforce are examples of:",
       options: ["SaaS", "PaaS", "IaaS", "Hybrid Cloud"],
       correctAnswer: 0,
-      explanation: "NLC practice question - review topic for details.",
+      explanation: "SaaS — Microsoft 365 and Salesforce deliver applications over the web.",
     },
     {
       id: "nlc_149",
@@ -2202,7 +2202,7 @@ export const STUDY_DATA: { questions: Question[]; flashcards: Flashcard[] } = {
       question: "A Type-1 (bare-metal) hypervisor:",
       options: ["Runs on top of a host OS", "Runs directly on hardware without a host OS", "Is slower than a Type-2 hypervisor", "Cannot run multiple VMs"],
       correctAnswer: 1,
-      explanation: "NLC practice question - review topic for details.",
+      explanation: "A Type-1 hypervisor runs directly on host hardware.",
     },
     {
       id: "nlc_150",
@@ -2210,7 +2210,7 @@ export const STUDY_DATA: { questions: Question[]; flashcards: Flashcard[] } = {
       question: "A Type-2 (hosted) hypervisor:",
       options: ["Runs on bare metal", "Runs as an application on a host OS", "Does not support VMs", "Is used only for networking"],
       correctAnswer: 1,
-      explanation: "NLC practice question - review topic for details.",
+      explanation: "A Type-2 hypervisor runs as an application on top of a host OS.",
     },
     {
       id: "nlc_151",
@@ -2218,7 +2218,7 @@ export const STUDY_DATA: { questions: Question[]; flashcards: Flashcard[] } = {
       question: "In a public cloud, infrastructure is shared between:",
       options: ["Only government agencies", "Multiple organizations (tenants)", "Only the cloud provider", "No one"],
       correctAnswer: 1,
-      explanation: "NLC practice question - review topic for details.",
+      explanation: "In a public cloud, infrastructure is shared between multiple organizations (tenants).",
     },
     {
       id: "nlc_152",
@@ -2226,7 +2226,7 @@ export const STUDY_DATA: { questions: Question[]; flashcards: Flashcard[] } = {
       question: "A private cloud differs from a public cloud because:",
       options: ["It uses less electricity", "Infrastructure is dedicated to a single organization", "It is always on-premises", "It is free"],
       correctAnswer: 1,
-      explanation: "NLC practice question - review topic for details.",
+      explanation: "A private cloud is dedicated to a single organization.",
     },
     {
       id: "nlc_153",
@@ -2234,7 +2234,7 @@ export const STUDY_DATA: { questions: Question[]; flashcards: Flashcard[] } = {
       question: "Containers differ from VMs because containers:",
       options: ["Share the host OS kernel", "Require a full OS per instance", "Are slower to boot", "Provide stronger isolation"],
       correctAnswer: 0,
-      explanation: "NLC practice question - review topic for details.",
+      explanation: "Containers share the host OS kernel, while VMs each run a full guest OS.",
     },
     {
       id: "nlc_154",
@@ -2242,7 +2242,7 @@ export const STUDY_DATA: { questions: Question[]; flashcards: Flashcard[] } = {
       question: "Which of the following is a common IoT security vulnerability?",
       options: ["Default passwords", "Excessive encryption", "Overly complex firmware updates", "Too many security patches"],
       correctAnswer: 0,
-      explanation: "NLC practice question - review topic for details.",
+      explanation: "Weak or hardcoded default passwords are a common IoT vulnerability.",
     },
     {
       id: "nlc_155",
@@ -2250,7 +2250,7 @@ export const STUDY_DATA: { questions: Question[]; flashcards: Flashcard[] } = {
       question: "IoT devices are particularly vulnerable because:",
       options: ["They are too expensive", "They often have limited computational resources and cannot support strong security", "They are always connected to the internet", "They use open-source software"],
       correctAnswer: 1,
-      explanation: "NLC practice question - review topic for details.",
+      explanation: "IoT devices often lack security updates, have limited processing power, and ship with insecure defaults.",
     },
     {
       id: "nlc_156",
@@ -2258,7 +2258,7 @@ export const STUDY_DATA: { questions: Question[]; flashcards: Flashcard[] } = {
       question: "VLANs provide which type of network segmentation?",
       options: ["Physical segmentation", "Logical (software-based) segmentation", "Geographic segmentation", "Temporal segmentation"],
       correctAnswer: 1,
-      explanation: "NLC practice question - review topic for details.",
+      explanation: "VLANs provide logical network segmentation at Layer 2.",
     },
     {
       id: "nlc_157",
@@ -2266,7 +2266,7 @@ export const STUDY_DATA: { questions: Question[]; flashcards: Flashcard[] } = {
       question: "Physical security measures like mantraps (double-door airlocks) are designed to prevent:",
       options: ["Tailgating/piggybacking", "Network attacks", "Phishing", "Data interception"],
       correctAnswer: 0,
-      explanation: "NLC practice question - review topic for details.",
+      explanation: "Mantraps prevent tailgating by requiring one person to pass through before the next door unlocks.",
     },
     {
       id: "nlc_158",
@@ -2274,7 +2274,7 @@ export const STUDY_DATA: { questions: Question[]; flashcards: Flashcard[] } = {
       question: "A Faraday cage is used in physical security to:",
       options: ["Prevent water damage", "Block electromagnetic signals from entering or leaving an area", "Increase temperature", "Store electronic equipment"],
       correctAnswer: 1,
-      explanation: "NLC practice question - review topic for details.",
+      explanation: "A Faraday cage blocks electromagnetic fields and signals.",
     },
     {
       id: "nlc_159",
@@ -2282,7 +2282,7 @@ export const STUDY_DATA: { questions: Question[]; flashcards: Flashcard[] } = {
       question: "Class C fires involve electrical equipment. Which extinguisher type should be used?",
       options: ["Water", "CO2", "Foam", "Wet chemical"],
       correctAnswer: 1,
-      explanation: "NLC practice question - review topic for details.",
+      explanation: "Class C fires require a non-conductive extinguisher such as CO2 or dry chemical.",
     },
     {
       id: "nlc_160",
@@ -2290,7 +2290,7 @@ export const STUDY_DATA: { questions: Question[]; flashcards: Flashcard[] } = {
       question: "Using a water-based extinguisher on a Class C fire is dangerous because:",
       options: ["It is too heavy", "Water conducts electricity and can cause electrocution", "It produces toxic fumes", "It cools too quickly"],
       correctAnswer: 1,
-      explanation: "NLC practice question - review topic for details.",
+      explanation: "Water conducts electricity and can cause shock or electrocution on electrical fires.",
     },
     {
       id: "nlc_161",
@@ -2298,7 +2298,7 @@ export const STUDY_DATA: { questions: Question[]; flashcards: Flashcard[] } = {
       question: "Which class of fire involves flammable liquids like gasoline?",
       options: ["Class A", "Class B", "Class C", "Class D"],
       correctAnswer: 1,
-      explanation: "NLC practice question - review topic for details.",
+      explanation: "Class B fires involve flammable liquids like gasoline.",
     },
     {
       id: "nlc_162",
@@ -2306,7 +2306,7 @@ export const STUDY_DATA: { questions: Question[]; flashcards: Flashcard[] } = {
       question: "Which class of fire involves combustible metals like magnesium?",
       options: ["Class A", "Class B", "Class C", "Class D"],
       correctAnswer: 3,
-      explanation: "NLC practice question - review topic for details.",
+      explanation: "Class D fires involve combustible metals like magnesium.",
     },
     {
       id: "nlc_163",
@@ -2314,7 +2314,7 @@ export const STUDY_DATA: { questions: Question[]; flashcards: Flashcard[] } = {
       question: "An air gap refers to which security measure?",
       options: ["A gap in firewall rules", "Physical separation of a system from all networks", "A type of encryption", "A space between server racks"],
       correctAnswer: 1,
-      explanation: "NLC practice question - review topic for details.",
+      explanation: "An air gap is complete physical isolation from all networks.",
     },
     {
       id: "nlc_164",
@@ -2322,7 +2322,7 @@ export const STUDY_DATA: { questions: Question[]; flashcards: Flashcard[] } = {
       question: "802.1X provides which of the following?",
       options: ["Wireless encryption", "Port-based network access control", "VPN tunneling", "DNS encryption"],
       correctAnswer: 1,
-      explanation: "NLC practice question - review topic for details.",
+      explanation: "802.1X provides port-based authentication.",
     },
     {
       id: "nlc_165",
@@ -2330,7 +2330,7 @@ export const STUDY_DATA: { questions: Question[]; flashcards: Flashcard[] } = {
       question: "RBAC in access control stands for:",
       options: ["Random Based Access Control", "Role-Based Access Control", "Rule-Based Authentication Control", "Root Based Access Control"],
       correctAnswer: 1,
-      explanation: "NLC practice question - review topic for details.",
+      explanation: "RBAC = Role-Based Access Control.",
     },
     {
       id: "nlc_166",
@@ -2338,7 +2338,7 @@ export const STUDY_DATA: { questions: Question[]; flashcards: Flashcard[] } = {
       question: "MAC (Mandatory Access Control) differs from RBAC because:",
       options: ["It is easier to manage", "Access decisions are made by the system based on labels, not by resource owners", "It uses passwords", "It is less secure"],
       correctAnswer: 1,
-      explanation: "NLC practice question - review topic for details.",
+      explanation: "MAC assigns access based on security labels and clearances; RBAC assigns based on job role.",
     },
     {
       id: "nlc_167",
@@ -2346,7 +2346,7 @@ export const STUDY_DATA: { questions: Question[]; flashcards: Flashcard[] } = {
       question: "Data masking is used to:",
       options: ["Encrypt data at rest", "Replace sensitive data with realistic but fictitious values for non-production use", "Delete all data", "Compress data for transmission"],
       correctAnswer: 1,
-      explanation: "NLC practice question - review topic for details.",
+      explanation: "Data masking obscures sensitive data while keeping it usable for testing or analysis.",
     },
     {
       id: "nlc_168",
@@ -2354,7 +2354,7 @@ export const STUDY_DATA: { questions: Question[]; flashcards: Flashcard[] } = {
       question: "The 3-2-1 backup rule requires:",
       options: ["3 copies, 2 different media, 1 offsite", "3 servers, 2 firewalls, 1 router", "3 backups daily, 2 weekly, 1 monthly", "3 admins, 2 analysts, 1 manager"],
       correctAnswer: 0,
-      explanation: "NLC practice question - review topic for details.",
+      explanation: "The 3-2-1 rule: 3 copies of data, on 2 different media, with 1 copy offsite.",
     },
     {
       id: "nlc_169",
@@ -2378,7 +2378,7 @@ export const STUDY_DATA: { questions: Question[]; flashcards: Flashcard[] } = {
       question: "Which of the following is NOT a characteristic of a computer worm?",
       options: ["Self-replicating", "Requires user interaction to spread", "Spreads across networks", "Can carry payloads"],
       correctAnswer: 1,
-      explanation: "NLC practice question - review topic for details.",
+      explanation: "A worm self-replicates and spreads without user action; a virus requires a host file and user action.",
     },
     {
       id: "nlc_172",
@@ -2386,7 +2386,7 @@ export const STUDY_DATA: { questions: Question[]; flashcards: Flashcard[] } = {
       question: "Which of the following best distinguishes a worm from a virus?",
       options: ["Viruses are larger", "Worms self-replicate without host files or user action", "Viruses target Windows only", "Worms are slower"],
       correctAnswer: 1,
-      explanation: "NLC practice question - review topic for details.",
+      explanation: "Social engineering exploits human psychology and trust.",
     },
     {
       id: "nlc_173",
@@ -2394,7 +2394,7 @@ export const STUDY_DATA: { questions: Question[]; flashcards: Flashcard[] } = {
       question: "Social engineering attacks primarily exploit:",
       options: ["Software vulnerabilities", "Human psychology and trust", "Network misconfigurations", "Weak encryption"],
       correctAnswer: 1,
-      explanation: "NLC practice question - review topic for details.",
+      explanation: "Phishing (email), vishing (voice), and smishing (SMS) are all social engineering attacks.",
     },
     {
       id: "nlc_174",
@@ -2402,7 +2402,7 @@ export const STUDY_DATA: { questions: Question[]; flashcards: Flashcard[] } = {
       question: "Phishing, vishing, and smishing are all examples of:",
       options: ["Malware types", "Social engineering techniques", "Encryption methods", "Network protocols"],
       correctAnswer: 1,
-      explanation: "NLC practice question - review topic for details.",
+      explanation: "Vishing involves calling an employee while pretending to be IT support.",
     },
     {
       id: "nlc_175",
@@ -2410,7 +2410,7 @@ export const STUDY_DATA: { questions: Question[]; flashcards: Flashcard[] } = {
       question: "Which attack involves calling an employee while pretending to be from IT support?",
       options: ["Phishing", "Vishing", "Smishing", "Spoofing"],
       correctAnswer: 1,
-      explanation: "NLC practice question - review topic for details.",
+      explanation: "A Trojan horse disguises malware as legitimate software.",
     },
     {
       id: "nlc_176",
@@ -2418,7 +2418,7 @@ export const STUDY_DATA: { questions: Question[]; flashcards: Flashcard[] } = {
       question: "A Trojan horse is characterized by:",
       options: ["Self-replication", "Disguising as legitimate software", "Buffer overflow exploitation", "Network scanning"],
       correctAnswer: 1,
-      explanation: "NLC practice question - review topic for details.",
+      explanation: "Ransomware primarily attacks availability by encrypting files.",
     },
     {
       id: "nlc_177",
@@ -2426,7 +2426,7 @@ export const STUDY_DATA: { questions: Question[]; flashcards: Flashcard[] } = {
       question: "Ransomware primarily attacks which CIA property?",
       options: ["Confidentiality", "Integrity", "Availability", "Authentication"],
       correctAnswer: 2,
-      explanation: "NLC practice question - review topic for details.",
+      explanation: "A UEFI rootkit infects the firmware layer.",
     },
     {
       id: "nlc_178",
@@ -2434,7 +2434,7 @@ export const STUDY_DATA: { questions: Question[]; flashcards: Flashcard[] } = {
       question: "A rootkit that infects the UEFI firmware is specifically called a:",
       options: ["Logic bomb", "Bootkit", "Keylogger", "Adware"],
       correctAnswer: 1,
-      explanation: "NLC practice question - review topic for details.",
+      explanation: "MFA requires two or more different authentication factors.",
     },
     {
       id: "nlc_179",
@@ -2442,7 +2442,7 @@ export const STUDY_DATA: { questions: Question[]; flashcards: Flashcard[] } = {
       question: "Multi-factor authentication (MFA) requires:",
       options: ["Two passwords", "Two or more different authentication factors", "Two biometric scans", "Two network connections"],
       correctAnswer: 1,
-      explanation: "NLC practice question - review topic for details.",
+      explanation: "A biometric trait like a fingerprint is NOT a separate factor if used alone — it's still 'something you are' but not MFA.",
     },
     {
       id: "nlc_180",
@@ -2450,7 +2450,7 @@ export const STUDY_DATA: { questions: Question[]; flashcards: Flashcard[] } = {
       question: "Which is NOT a valid authentication factor?",
       options: ["Something you know", "Something you have", "Something you remember", "Something you are"],
       correctAnswer: 2,
-      explanation: "NLC practice question - review topic for details.",
+      explanation: "Kerberos uses symmetric key encryption.",
     },
     {
       id: "nlc_181",
@@ -2458,7 +2458,7 @@ export const STUDY_DATA: { questions: Question[]; flashcards: Flashcard[] } = {
       question: "The Kerberos protocol uses which type of encryption?",
       options: ["Asymmetric only", "Symmetric key cryptography", "Hashing only", "No encryption"],
       correctAnswer: 1,
-      explanation: "NLC practice question - review topic for details.",
+      explanation: "Kerberos relies on a trusted third party called the Key Distribution Center.",
     },
     {
       id: "nlc_182",
@@ -2466,7 +2466,7 @@ export const STUDY_DATA: { questions: Question[]; flashcards: Flashcard[] } = {
       question: "Kerberos authentication relies on:",
       options: ["Certificates", "Tickets issued by a Key Distribution Center (KDC)", "Biometrics only", "Challenge-response only"],
       correctAnswer: 1,
-      explanation: "NLC practice question - review topic for details.",
+      explanation: "Kerberos uses tickets and a centralized Key Distribution Center.",
     },
     {
       id: "nlc_183",
@@ -2474,7 +2474,7 @@ export const STUDY_DATA: { questions: Question[]; flashcards: Flashcard[] } = {
       question: "Which authentication protocol uses tickets and a centralized Key Distribution Center?",
       options: ["RADIUS", "TACACS+", "Kerberos", "LDAP"],
       correctAnswer: 2,
-      explanation: "NLC practice question - review topic for details.",
+      explanation: "RADIUS provides Authentication and Authorization.",
     },
     {
       id: "nlc_184",
@@ -2482,7 +2482,7 @@ export const STUDY_DATA: { questions: Question[]; flashcards: Flashcard[] } = {
       question: "RADIUS provides which AAA components?",
       options: ["Authentication, Authorization, Accounting", "Only Authentication", "Only Authorization", "Authentication and Authorization only"],
       correctAnswer: 0,
-      explanation: "NLC practice question - review topic for details.",
+      explanation: "TACACS+ is Cisco-developed, uses TCP, and encrypts the entire packet body.",
     },
     {
       id: "nlc_185",
@@ -2498,7 +2498,7 @@ export const STUDY_DATA: { questions: Question[]; flashcards: Flashcard[] } = {
       question: "DNSSEC adds which security feature to DNS?",
       options: ["Encryption of DNS queries", "Digital signatures to verify DNS record authenticity", "Faster DNS resolution", "IP masking"],
       correctAnswer: 1,
-      explanation: "NLC practice question - review topic for details.",
+      explanation: "ARP poisoning redirects traffic by falsifying IP-to-MAC mappings.",
     },
     {
       id: "nlc_187",
@@ -2506,7 +2506,7 @@ export const STUDY_DATA: { questions: Question[]; flashcards: Flashcard[] } = {
       question: "ARP poisoning is used to:",
       options: ["Speed up DNS resolution", "Redirect traffic through an attacker machine (MITM)", "Encrypt network packets", "Improve network performance"],
       correctAnswer: 1,
-      explanation: "NLC practice question - review topic for details.",
+      explanation: "ARP resolves IP addresses to MAC addresses.",
     },
     {
       id: "nlc_188",
@@ -2514,7 +2514,7 @@ export const STUDY_DATA: { questions: Question[]; flashcards: Flashcard[] } = {
       question: "Which protocol resolves IP addresses to MAC addresses?",
       options: ["DNS", "DHCP", "ARP", "ICMP"],
       correctAnswer: 2,
-      explanation: "NLC practice question - review topic for details.",
+      explanation: "RIP uses hop count as its metric, with a maximum of 15 hops.",
     },
     {
       id: "nlc_189",
@@ -2522,7 +2522,7 @@ export const STUDY_DATA: { questions: Question[]; flashcards: Flashcard[] } = {
       question: "Which routing protocol uses hop count as its metric and has a maximum of 15 hops?",
       options: ["OSPF", "BGP", "RIP", "EIGRP"],
       correctAnswer: 2,
-      explanation: "NLC practice question - review topic for details.",
+      explanation: "WPA2 introduced the 4-way handshake (with KRACK weakness).",
     },
     {
       id: "nlc_190",
@@ -2530,7 +2530,7 @@ export const STUDY_DATA: { questions: Question[]; flashcards: Flashcard[] } = {
       question: "Which wireless security protocol introduced the 4-way handshake weakness exploited by KRACK?",
       options: ["WEP", "WPA", "WPA2", "WPA3"],
       correctAnswer: 2,
-      explanation: "NLC practice question - review topic for details.",
+      explanation: "RIP is a distance-vector routing protocol.",
     },
     {
       id: "nlc_191",
@@ -2538,7 +2538,7 @@ export const STUDY_DATA: { questions: Question[]; flashcards: Flashcard[] } = {
       question: "Which of the following is a distance-vector routing protocol?",
       options: ["OSPF", "BGP", "RIP", "IS-IS"],
       correctAnswer: 2,
-      explanation: "NLC practice question - review topic for details.",
+      explanation: "BGP is used for routing between autonomous systems on the internet.",
     },
     {
       id: "nlc_192",
@@ -2546,7 +2546,7 @@ export const STUDY_DATA: { questions: Question[]; flashcards: Flashcard[] } = {
       question: "BGP is primarily used for:",
       options: ["Internal routing within a single organization", "Routing between autonomous systems on the internet", "Wireless network routing", "Local subnet routing"],
       correctAnswer: 1,
-      explanation: "NLC practice question - review topic for details.",
+      explanation: "SSH provides secure remote access.",
     },
     {
       id: "nlc_193",
@@ -2554,7 +2554,7 @@ export const STUDY_DATA: { questions: Question[]; flashcards: Flashcard[] } = {
       question: "Which protocol provides secure remote access to network devices?",
       options: ["Telnet", "SSH", "HTTP", "FTP"],
       correctAnswer: 1,
-      explanation: "NLC practice question - review topic for details.",
+      explanation: "TCP operates at OSI Layer 4.",
     },
     {
       id: "nlc_194",
@@ -2562,7 +2562,7 @@ export const STUDY_DATA: { questions: Question[]; flashcards: Flashcard[] } = {
       question: "Which of the following operates at OSI Layer 4 (Transport)?",
       options: ["IP", "TCP", "ARP", "HTTP"],
       correctAnswer: 1,
-      explanation: "NLC practice question - review topic for details.",
+      explanation: "The Presentation Layer handles data formatting, encryption, and compression.",
     },
     {
       id: "nlc_195",
@@ -2570,7 +2570,7 @@ export const STUDY_DATA: { questions: Question[]; flashcards: Flashcard[] } = {
       question: "What is the primary function of the OSI Presentation Layer?",
       options: ["Encryption and data formatting", "Physical transmission", "Routing", "Session management"],
       correctAnswer: 0,
-      explanation: "NLC practice question - review topic for details.",
+      explanation: "The Session Layer establishes, maintains, and terminates sessions.",
     },
     {
       id: "nlc_196",
@@ -2578,7 +2578,7 @@ export const STUDY_DATA: { questions: Question[]; flashcards: Flashcard[] } = {
       question: "Which OSI layer is responsible for establishing, maintaining, and terminating sessions?",
       options: ["Transport Layer", "Session Layer", "Application Layer", "Network Layer"],
       correctAnswer: 1,
-      explanation: "NLC practice question - review topic for details.",
+      explanation: "A hub operates at Layer 1 (Physical).",
     },
     {
       id: "nlc_197",
@@ -2586,7 +2586,7 @@ export const STUDY_DATA: { questions: Question[]; flashcards: Flashcard[] } = {
       question: "At which OSI layer does a hub operate?",
       options: ["Layer 2", "Layer 3", "Layer 1", "Layer 4"],
       correctAnswer: 2,
-      explanation: "NLC practice question - review topic for details.",
+      explanation: "A switch operates at Layer 2 (Data Link).",
     },
     {
       id: "nlc_198",
@@ -2594,7 +2594,7 @@ export const STUDY_DATA: { questions: Question[]; flashcards: Flashcard[] } = {
       question: "A switch operates at which OSI layer?",
       options: ["Layer 1", "Layer 2", "Layer 3", "Layer 4"],
       correctAnswer: 1,
-      explanation: "NLC practice question - review topic for details.",
+      explanation: "A router operates primarily at Layer 3 (Network).",
     },
     {
       id: "nlc_199",
@@ -2602,7 +2602,7 @@ export const STUDY_DATA: { questions: Question[]; flashcards: Flashcard[] } = {
       question: "A router operates primarily at which OSI layer?",
       options: ["Layer 1", "Layer 2", "Layer 3", "Layer 7"],
       correctAnswer: 2,
-      explanation: "NLC practice question - review topic for details.",
+      explanation: "A router operates at Layer 3.",
     },
     {
       id: "nlc_200",
@@ -2610,7 +2610,7 @@ export const STUDY_DATA: { questions: Question[]; flashcards: Flashcard[] } = {
       question: "Which of the following operates at Layer 3 (Network)?",
       options: ["Switch", "Hub", "Router", "Bridge"],
       correctAnswer: 2,
-      explanation: "NLC practice question - review topic for details.",
+      explanation: "ARP operates at Layer 2.",
     },
     {
       id: "nlc_201",
@@ -2618,7 +2618,7 @@ export const STUDY_DATA: { questions: Question[]; flashcards: Flashcard[] } = {
       question: "Which protocol operates at Layer 2 (Data Link)?",
       options: ["IP", "TCP", "ARP", "HTTP"],
       correctAnswer: 2,
-      explanation: "NLC practice question - review topic for details.",
+      explanation: "Ethernet operates at Layers 1 and 2.",
     },
     {
       id: "nlc_202",
@@ -2626,7 +2626,7 @@ export const STUDY_DATA: { questions: Question[]; flashcards: Flashcard[] } = {
       question: "Ethernet operates at which OSI layer?",
       options: ["Layer 1", "Layer 2", "Layer 3", "Layer 4"],
       correctAnswer: 1,
-      explanation: "NLC practice question - review topic for details.",
+      explanation: "A MAC address is 48 bits long.",
     },
     {
       id: "nlc_203",
@@ -2634,7 +2634,7 @@ export const STUDY_DATA: { questions: Question[]; flashcards: Flashcard[] } = {
       question: "The Ethernet MAC address is how many bits long?",
       options: ["32 bits", "48 bits", "64 bits", "128 bits"],
       correctAnswer: 1,
-      explanation: "NLC practice question - review topic for details.",
+      explanation: "IPv6 addresses are 128 bits long.",
     },
     {
       id: "nlc_204",
@@ -2642,7 +2642,7 @@ export const STUDY_DATA: { questions: Question[]; flashcards: Flashcard[] } = {
       question: "IPv6 addresses are how many bits long?",
       options: ["32 bits", "48 bits", "64 bits", "128 bits"],
       correctAnswer: 3,
-      explanation: "NLC practice question - review topic for details.",
+      explanation: "Unique Local Addresses (fc00::/7) are equivalent to IPv4 private addresses.",
     },
     {
       id: "nlc_205",
@@ -2650,7 +2650,7 @@ export const STUDY_DATA: { questions: Question[]; flashcards: Flashcard[] } = {
       question: "Which IPv6 address type is equivalent to IPv4 private addresses?",
       options: ["Global Unicast", "Link-Local", "Unique Local (FC00::/7)", "Multicast"],
       correctAnswer: 2,
-      explanation: "NLC practice question - review topic for details.",
+      explanation: "NAT conserves public IP addresses by letting many devices share one.",
     },
     {
       id: "nlc_206",
@@ -2658,7 +2658,7 @@ export const STUDY_DATA: { questions: Question[]; flashcards: Flashcard[] } = {
       question: "NAT (Network Address Translation) is used to:",
       options: ["Convert IPv4 to IPv6", "Map many private IP addresses to fewer public IP addresses", "Encrypt packets", "Filter DNS queries"],
       correctAnswer: 1,
-      explanation: "NLC practice question - review topic for details.",
+      explanation: "192.168.x.x is a Class C private address range.",
     },
     {
       id: "nlc_207",
@@ -2666,7 +2666,7 @@ export const STUDY_DATA: { questions: Question[]; flashcards: Flashcard[] } = {
       question: "Which of the following is a Class C IP address?",
       options: ["10.0.0.1", "172.16.0.1", "192.168.1.1", "240.0.0.1"],
       correctAnswer: 2,
-      explanation: "NLC practice question - review topic for details.",
+      explanation: "169.254.x.x (APIPA) is not a routable private range.",
     },
     {
       id: "nlc_208",
@@ -2674,7 +2674,7 @@ export const STUDY_DATA: { questions: Question[]; flashcards: Flashcard[] } = {
       question: "Private IP address ranges include all of the following EXCEPT:",
       options: ["10.0.0.0/8", "172.16.0.0/12", "192.168.0.0/16", "203.0.113.0/24"],
       correctAnswer: 3,
-      explanation: "NLC practice question - review topic for details.",
+      explanation: "/24 provides 254 usable host addresses (256 minus network and broadcast).",
     },
     {
       id: "nlc_209",
@@ -2682,7 +2682,7 @@ export const STUDY_DATA: { questions: Question[]; flashcards: Flashcard[] } = {
       question: "Which of the following subnet masks provides 254 usable host addresses?",
       options: ["255.255.255.0", "255.255.255.128", "255.255.255.192", "255.255.0.0"],
       correctAnswer: 0,
-      explanation: "NLC practice question - review topic for details.",
+      explanation: "/24 is equivalent to 255.255.255.0.",
     },
     {
       id: "nlc_210",
@@ -2690,7 +2690,7 @@ export const STUDY_DATA: { questions: Question[]; flashcards: Flashcard[] } = {
       question: "CIDR notation /24 is equivalent to which subnet mask?",
       options: ["255.0.0.0", "255.255.0.0", "255.255.255.0", "255.255.255.128"],
       correctAnswer: 2,
-      explanation: "NLC practice question - review topic for details.",
+      explanation: "The OSI model has 7 layers.",
     },
     {
       id: "nlc_211",
@@ -2698,7 +2698,7 @@ export const STUDY_DATA: { questions: Question[]; flashcards: Flashcard[] } = {
       question: "The OSI model has how many layers?",
       options: ["4", "5", "6", "7"],
       correctAnswer: 3,
-      explanation: "NLC practice question - review topic for details.",
+      explanation: "The TCP/IP model has 4 layers.",
     },
     {
       id: "nlc_212",
@@ -2706,7 +2706,7 @@ export const STUDY_DATA: { questions: Question[]; flashcards: Flashcard[] } = {
       question: "The TCP/IP model has how many layers?",
       options: ["3", "4", "5", "7"],
       correctAnswer: 1,
-      explanation: "NLC practice question - review topic for details.",
+      explanation: "TCP provides reliable delivery at Layer 4.",
     },
     {
       id: "nlc_213",
@@ -2714,7 +2714,7 @@ export const STUDY_DATA: { questions: Question[]; flashcards: Flashcard[] } = {
       question: "Which protocol provides reliable delivery at the Transport Layer?",
       options: ["UDP", "ICMP", "TCP", "ARP"],
       correctAnswer: 2,
-      explanation: "NLC practice question - review topic for details.",
+      explanation: "UDP is connectionless and unreliable.",
     },
     {
       id: "nlc_214",
@@ -2722,7 +2722,7 @@ export const STUDY_DATA: { questions: Question[]; flashcards: Flashcard[] } = {
       question: "UDP is characterized by which of the following?",
       options: ["Guaranteed delivery", "Connection-oriented", "Connectionless with no guaranteed delivery", "Three-way handshake"],
       correctAnswer: 2,
-      explanation: "NLC practice question - review topic for details.",
+      explanation: "TCP handshake: SYN, SYN-ACK, ACK.",
     },
     {
       id: "nlc_215",
@@ -2730,7 +2730,7 @@ export const STUDY_DATA: { questions: Question[]; flashcards: Flashcard[] } = {
       question: "TCP three-way handshake involves which sequence of packets?",
       options: ["SYN, ACK, FIN", "SYN, SYN-ACK, ACK", "SYN, SYN, ACK", "ACK, SYN-ACK, ACK"],
       correctAnswer: 1,
-      explanation: "NLC practice question - review topic for details.",
+      explanation: "TCP port 80 is HTTP.",
     },
     {
       id: "nlc_216",
@@ -2738,7 +2738,7 @@ export const STUDY_DATA: { questions: Question[]; flashcards: Flashcard[] } = {
       question: "TCP port 80 is used by:",
       options: ["HTTPS", "FTP", "HTTP", "SSH"],
       correctAnswer: 2,
-      explanation: "NLC practice question - review topic for details.",
+      explanation: "ICMP provides network-layer error reporting.",
     },
     {
       id: "nlc_217",
@@ -2746,7 +2746,7 @@ export const STUDY_DATA: { questions: Question[]; flashcards: Flashcard[] } = {
       question: "Which protocol provides connectionless network layer error reporting?",
       options: ["TCP", "UDP", "ICMP", "ARP"],
       correctAnswer: 2,
-      explanation: "NLC practice question - review topic for details.",
+      explanation: "ping uses ICMP.",
     },
     {
       id: "nlc_218",
@@ -2754,7 +2754,7 @@ export const STUDY_DATA: { questions: Question[]; flashcards: Flashcard[] } = {
       question: "The ping utility uses which protocol?",
       options: ["TCP", "UDP", "ICMP", "HTTP"],
       correctAnswer: 2,
-      explanation: "NLC practice question - review topic for details.",
+      explanation: "Encryption is reversible with a key; hashing is one-way.",
     },
     {
       id: "nlc_219",
@@ -2762,7 +2762,7 @@ export const STUDY_DATA: { questions: Question[]; flashcards: Flashcard[] } = {
       question: "Which statement about encryption and hashing is correct?",
       options: ["Both are reversible", "Encryption is reversible; hashing is one-way", "Both produce fixed-length output", "Hashing always uses public keys"],
       correctAnswer: 1,
-      explanation: "NLC practice question - review topic for details.",
+      explanation: "Symmetric keys are the same for encryption and decryption.",
     },
     {
       id: "nlc_220",
@@ -2770,7 +2770,7 @@ export const STUDY_DATA: { questions: Question[]; flashcards: Flashcard[] } = {
       question: "Which statement about keys is correct?",
       options: ["AES-128 uses a 256-bit key", "RSA keys are typically 1024-4096 bits", "ECC keys are longer than RSA keys", "SHA-256 uses a 512-bit key"],
       correctAnswer: 1,
-      explanation: "NLC practice question - review topic for details.",
+      explanation: "Cloud computing delivers computing resources over the internet on demand.",
     },
     {
       id: "nlc_221",
@@ -2778,7 +2778,7 @@ export const STUDY_DATA: { questions: Question[]; flashcards: Flashcard[] } = {
       question: "Which statement about cloud computing is correct?",
       options: ["SaaS requires OS management", "PaaS gives the most control", "IaaS gives the most control", "Cloud always costs less"],
       correctAnswer: 2,
-      explanation: "NLC practice question - review topic for details.",
+      explanation: "Malware is any software designed to harm or exploit systems.",
     },
     {
       id: "nlc_222",
@@ -2786,7 +2786,7 @@ export const STUDY_DATA: { questions: Question[]; flashcards: Flashcard[] } = {
       question: "Which statement about malware is correct?",
       options: ["Viruses self-replicate without user action", "Trojans do NOT self-replicate", "Worms need host files", "Logic bombs spread like viruses"],
       correctAnswer: 1,
-      explanation: "NLC practice question - review topic for details.",
+      explanation: "Access control determines who can view or use resources.",
     },
     {
       id: "nlc_223",
@@ -2794,7 +2794,7 @@ export const STUDY_DATA: { questions: Question[]; flashcards: Flashcard[] } = {
       question: "Which statement about access control is correct?",
       options: ["MAC uses owner discretion", "DAC uses system-enforced labels", "RBAC grants access based on job function", "ABAC is the simplest model"],
       correctAnswer: 2,
-      explanation: "NLC practice question - review topic for details.",
+      explanation: "Cryptography protects data confidentiality and integrity.",
     },
     {
       id: "nlc_224",
@@ -2802,7 +2802,7 @@ export const STUDY_DATA: { questions: Question[]; flashcards: Flashcard[] } = {
       question: "Which statement about cryptography is correct?",
       options: ["MD5 is secure for passwords", "SHA-1 is recommended", "AES-GCM provides confidentiality and integrity", "RSA is a hash function"],
       correctAnswer: 2,
-      explanation: "NLC practice question - review topic for details.",
+      explanation: "Physical security protects hardware and facilities from physical threats.",
     },
     {
       id: "nlc_225",
@@ -2810,7 +2810,7 @@ export const STUDY_DATA: { questions: Question[]; flashcards: Flashcard[] } = {
       question: "Which statement about physical security is correct?",
       options: ["Mantraps prevent network attacks", "Faraday cages block electromagnetic signals", "CO2 extinguishers are for Class A fires", "Class C fires involve flammable metals"],
       correctAnswer: 1,
-      explanation: "NLC practice question - review topic for details.",
+      explanation: "Incident response is the process of handling security breaches.",
     },
     {
       id: "nlc_226",
@@ -2818,7 +2818,7 @@ export const STUDY_DATA: { questions: Question[]; flashcards: Flashcard[] } = {
       question: "Which statement about incident response is correct?",
       options: ["Containment comes before detection", "Preparation is optional", "Post-incident activity involves lessons learned", "Eradication is first"],
       correctAnswer: 2,
-      explanation: "NLC practice question - review topic for details.",
+      explanation: "Ports identify specific processes or services on a host.",
     },
     {
       id: "nlc_227",
@@ -2826,7 +2826,7 @@ export const STUDY_DATA: { questions: Question[]; flashcards: Flashcard[] } = {
       question: "Which statement about ports is correct?",
       options: ["Port 25 = HTTPS", "Port 53 = DNS", "Port 1723 = L2TP", "Port 465 = IMAP"],
       correctAnswer: 1,
-      explanation: "NLC practice question - review topic for details.",
+      explanation: "WEP uses weak RC4 encryption with short IVs.",
     },
     {
       id: "nlc_228",
@@ -2834,7 +2834,7 @@ export const STUDY_DATA: { questions: Question[]; flashcards: Flashcard[] } = {
       question: "Which statement about WEP is correct?",
       options: ["WEP is the current Wi-Fi standard", "WEP uses AES encryption", "WEP is completely broken", "WEP requires no key"],
       correctAnswer: 2,
-      explanation: "NLC practice question - review topic for details.",
+      explanation: "VLANs segment a network logically at Layer 2.",
     },
     {
       id: "nlc_229",
@@ -2842,7 +2842,7 @@ export const STUDY_DATA: { questions: Question[]; flashcards: Flashcard[] } = {
       question: "Which statement about VLANs is correct?",
       options: ["VLANs provide physical segmentation", "VLANs provide logical segmentation", "VLANs operate at Layer 4", "VLANs cannot span switches"],
       correctAnswer: 1,
-      explanation: "NLC practice question - review topic for details.",
+      explanation: "IPsec provides secure IP communications through authentication and encryption.",
     },
     {
       id: "nlc_230",
@@ -2850,7 +2850,7 @@ export const STUDY_DATA: { questions: Question[]; flashcards: Flashcard[] } = {
       question: "Which statement about IPsec is correct?",
       options: ["IPsec operates at Layer 7", "IPsec Tunnel mode encrypts the entire packet", "IPsec only works with IPv6", "IPsec does not provide confidentiality"],
       correctAnswer: 1,
-      explanation: "NLC practice question - review topic for details.",
+      explanation: "DNS translates domain names to IP addresses.",
     },
     {
       id: "nlc_231",
@@ -2858,7 +2858,7 @@ export const STUDY_DATA: { questions: Question[]; flashcards: Flashcard[] } = {
       question: "Which statement about DNS is correct?",
       options: ["DNS uses TCP for all queries", "DNS primary zone transfers use UDP", "DNS primarily uses UDP port 53", "DNSSEC speeds up DNS lookups"],
       correctAnswer: 2,
-      explanation: "NLC practice question - review topic for details.",
+      explanation: "DNS primarily uses UDP port 53 for queries; TCP is used for zone transfers and large responses.",
     },
     {
       id: "nlx_000",
@@ -2866,7 +2866,7 @@ export const STUDY_DATA: { questions: Question[]; flashcards: Flashcard[] } = {
       question: "A Linux system administrator needs to verify the integrity of the root filesystem after a crash. Which utility checks and repairs filesystem corruption?",
       options: ["dd", "grep", "fsck", "chmod"],
       correctAnswer: 2,
-      explanation: "NLC practice question - review topic for details.",
+      explanation: "md5sum or sha256sum computes a file hash to verify integrity.",
     },
     {
       id: "nlx_001",
@@ -2874,7 +2874,7 @@ export const STUDY_DATA: { questions: Question[]; flashcards: Flashcard[] } = {
       question: "An investigator needs to create a bit-stream image of a Linux partition for forensic analysis. Which command-line utility is the standard for this action?",
       options: ["fsck", "cp", "dd", "tar"],
       correctAnswer: 2,
-      explanation: "NLC practice question - review topic for details.",
+      explanation: "dd can create a bit-stream image of a partition.",
     },
     {
       id: "nlx_002",
@@ -2882,7 +2882,7 @@ export const STUDY_DATA: { questions: Question[]; flashcards: Flashcard[] } = {
       question: "Which dd command correctly creates a bit-stream image of /dev/sda1?",
       options: ["dd if=/dev/sda1 of=image.dd", "dd of=/dev/sda1 if=image.dd", "dd --image /dev/sda1 image.dd", "dd --backup /dev/sda1 > image.dd"],
       correctAnswer: 0,
-      explanation: "NLC practice question - review topic for details.",
+      explanation: "dd if=/dev/sda1 of=image.dd creates a bit-stream image.",
     },
     {
       id: "nlx_003",
@@ -2890,7 +2890,7 @@ export const STUDY_DATA: { questions: Question[]; flashcards: Flashcard[] } = {
       question: "After imaging a disk with dd, the investigator should verify the copy by:",
       options: ["Comparing file sizes only", "Running md5sum or sha256sum on both source and image", "Checking timestamps", "Mounting the image"],
       correctAnswer: 1,
-      explanation: "NLC practice question - review topic for details.",
+      explanation: "Compare hash values of the original and the image.",
     },
     {
       id: "nlx_004",
@@ -2898,7 +2898,7 @@ export const STUDY_DATA: { questions: Question[]; flashcards: Flashcard[] } = {
       question: "The chain of custody in digital forensics is:",
       options: ["The list of evidence storage locations", "A documented record of who handled evidence and when", "The order of evidence destruction", "A network security protocol"],
       correctAnswer: 1,
-      explanation: "NLC practice question - review topic for details.",
+      explanation: "Chain of custody documents who handled evidence and when.",
     },
     {
       id: "nlx_005",
@@ -2906,7 +2906,7 @@ export const STUDY_DATA: { questions: Question[]; flashcards: Flashcard[] } = {
       question: "According to the Order of Volatility, which should be collected FIRST?",
       options: ["Hard drive contents", "CPU registers", "Network logs", "Archival backups"],
       correctAnswer: 1,
-      explanation: "NLC practice question - review topic for details.",
+      explanation: "Collect volatile data first, per the Order of Volatility.",
     },
     {
       id: "nlx_006",
@@ -2914,7 +2914,7 @@ export const STUDY_DATA: { questions: Question[]; flashcards: Flashcard[] } = {
       question: "Which of the following correctly lists the Order of Volatility from most to least volatile?",
       options: ["Hard drive, RAM, CPU cache, Registers", "Registers, CPU cache, RAM, Hard drive", "RAM, Hard drive, Registers, CPU cache", "CPU cache, Hard drive, Registers, RAM"],
       correctAnswer: 1,
-      explanation: "NLC practice question - review topic for details.",
+      explanation: "Registers, cache, RAM, disk, then archival media (most to least volatile).",
     },
     {
       id: "nlx_007",
@@ -2922,7 +2922,7 @@ export const STUDY_DATA: { questions: Question[]; flashcards: Flashcard[] } = {
       question: "The dd command bs=512 parameter specifies:",
       options: ["The total size of the image", "The block size for read/write operations", "The hash block count", "The byte skip count"],
       correctAnswer: 1,
-      explanation: "NLC practice question - review topic for details.",
+      explanation: "bs=512 sets the block size to 512 bytes per read/write.",
     },
     {
       id: "nlx_008",
@@ -2930,7 +2930,7 @@ export const STUDY_DATA: { questions: Question[]; flashcards: Flashcard[] } = {
       question: "An investigator wants to use dd to write an image TO a disk instead of reading FROM it. Which command is correct?",
       options: ["dd if=image.dd of=/dev/sdb", "dd of=image.dd if=/dev/sdb", "dd --write image.dd /dev/sdb", "dd image.dd > /dev/sdb"],
       correctAnswer: 0,
-      explanation: "NLC practice question - review topic for details.",
+      explanation: "Use dd with of=/dev/sdX to write an image to disk.",
     },
     {
       id: "nlx_009",
@@ -2938,7 +2938,7 @@ export const STUDY_DATA: { questions: Question[]; flashcards: Flashcard[] } = {
       question: "The fsck command with the -y flag is used to:",
       options: ["Check only the root filesystem", "Automatically answer yes to all repair prompts", "Verify checksums only", "Display filesystem statistics"],
       correctAnswer: 1,
-      explanation: "NLC practice question - review topic for details.",
+      explanation: "fsck -y automatically repairs filesystem inconsistencies.",
     },
     {
       id: "nlx_010",
@@ -2946,7 +2946,7 @@ export const STUDY_DATA: { questions: Question[]; flashcards: Flashcard[] } = {
       question: "In Linux forensics, the /proc directory contains:",
       options: ["User home directories", "Virtual filesystem reflecting running processes and kernel state", "System configuration files", "Log files"],
       correctAnswer: 1,
-      explanation: "NLC practice question - review topic for details.",
+      explanation: "/proc contains runtime kernel and process information.",
     },
     {
       id: "nlx_011",
@@ -2954,7 +2954,7 @@ export const STUDY_DATA: { questions: Question[]; flashcards: Flashcard[] } = {
       question: "Which Linux command is commonly used to verify file integrity by computing a hash?",
       options: ["fsck", "md5sum", "dd", "ls -la"],
       correctAnswer: 1,
-      explanation: "NLC practice question - review topic for details.",
+      explanation: "sha256sum or md5sum verifies file integrity via hash comparison.",
     },
     {
       id: "nlx_012",
@@ -2962,7 +2962,7 @@ export const STUDY_DATA: { questions: Question[]; flashcards: Flashcard[] } = {
       question: "Which of the following is a key difference between symmetric and asymmetric encryption?",
       options: ["Symmetric is faster", "Asymmetric is older", "Symmetric uses two keys", "Asymmetric is only for email"],
       correctAnswer: 0,
-      explanation: "NLC practice question - review topic for details.",
+      explanation: "Symmetric uses one shared key; asymmetric uses a public/private key pair.",
     },
     {
       id: "nlx_013",
@@ -2970,7 +2970,7 @@ export const STUDY_DATA: { questions: Question[]; flashcards: Flashcard[] } = {
       question: "Which of the following is a block cipher?",
       options: ["RC4", "AES", "ChaCha20", "Salsa20"],
       correctAnswer: 1,
-      explanation: "NLC practice question - review topic for details.",
+      explanation: "AES is a block cipher.",
     },
     {
       id: "nlx_014",
@@ -2978,7 +2978,7 @@ export const STUDY_DATA: { questions: Question[]; flashcards: Flashcard[] } = {
       question: "Which of the following is an asymmetric encryption algorithm?",
       options: ["AES", "DES", "RSA", "Blowfish"],
       correctAnswer: 2,
-      explanation: "NLC practice question - review topic for details.",
+      explanation: "RSA is an asymmetric encryption algorithm.",
     },
     {
       id: "nlx_015",
@@ -2986,7 +2986,7 @@ export const STUDY_DATA: { questions: Question[]; flashcards: Flashcard[] } = {
       question: "Which of the following provides non-repudiation?",
       options: ["AES encryption", "HMAC", "Digital signature", "SHA-256 hash"],
       correctAnswer: 2,
-      explanation: "NLC practice question - review topic for details.",
+      explanation: "Digital signatures provide non-repudiation.",
     },
     {
       id: "nlx_016",
@@ -2994,7 +2994,7 @@ export const STUDY_DATA: { questions: Question[]; flashcards: Flashcard[] } = {
       question: "Which of the following is true about digital signatures?",
       options: ["They use symmetric keys", "They provide confidentiality", "They provide authentication and non-repudiation", "They are faster than encryption"],
       correctAnswer: 2,
-      explanation: "NLC practice question - review topic for details.",
+      explanation: "Digital signatures use the sender's private key to sign and public key to verify.",
     },
     {
       id: "nlx_017",
@@ -3002,7 +3002,7 @@ export const STUDY_DATA: { questions: Question[]; flashcards: Flashcard[] } = {
       question: "Which of the following is true about hashing?",
       options: ["It is reversible", "It requires a key", "It produces fixed-size output regardless of input size", "It is the same as encryption"],
       correctAnswer: 2,
-      explanation: "NLC practice question - review topic for details.",
+      explanation: "Hashing produces a fixed-size digest and is one-way.",
     },
     {
       id: "nlx_018",
@@ -3010,7 +3010,7 @@ export const STUDY_DATA: { questions: Question[]; flashcards: Flashcard[] } = {
       question: "Which of the following is true about symmetric encryption?",
       options: ["It uses two different keys", "It is slower than asymmetric", "It solves the key distribution problem", "It uses one shared key for encryption and decryption"],
       correctAnswer: 3,
-      explanation: "NLC practice question - review topic for details.",
+      explanation: "Symmetric encryption is faster and suited for bulk data.",
     },
     {
       id: "nlx_019",
@@ -3018,7 +3018,7 @@ export const STUDY_DATA: { questions: Question[]; flashcards: Flashcard[] } = {
       question: "Which of the following is true about asymmetric encryption?",
       options: ["It uses one key", "It is faster than symmetric", "It uses a public/private key pair", "It is only used for hashing"],
       correctAnswer: 2,
-      explanation: "NLC practice question - review topic for details.",
+      explanation: "Asymmetric encryption uses different keys for encryption and decryption.",
     },
     {
       id: "nlx_020",
@@ -3026,7 +3026,7 @@ export const STUDY_DATA: { questions: Question[]; flashcards: Flashcard[] } = {
       question: "Which of the following is true about PKI?",
       options: ["It only uses symmetric keys", "It manages digital certificates and public/private key pairs", "It is a type of firewall", "It replaces passwords"],
       correctAnswer: 1,
-      explanation: "NLC practice question - review topic for details.",
+      explanation: "PKI manages digital certificates and public keys.",
     },
     {
       id: "nlx_021",
@@ -3034,7 +3034,7 @@ export const STUDY_DATA: { questions: Question[]; flashcards: Flashcard[] } = {
       question: "Which of the following is true about TLS?",
       options: ["It operates at Layer 3", "It only provides encryption", "It provides confidentiality, integrity, and authentication", "It is the same as SSL 2.0"],
       correctAnswer: 2,
-      explanation: "NLC practice question - review topic for details.",
+      explanation: "TLS provides encrypted communication over a network.",
     },
     {
       id: "nlx_022",
@@ -3042,7 +3042,7 @@ export const STUDY_DATA: { questions: Question[]; flashcards: Flashcard[] } = {
       question: "Which of the following is true about VPNs?",
       options: ["They only use symmetric encryption", "They create a secure tunnel over public networks", "They operate at Layer 1", "They replace firewalls"],
       correctAnswer: 1,
-      explanation: "NLC practice question - review topic for details.",
+      explanation: "VPNs create encrypted tunnels over public networks.",
     },
     {
       id: "nlx_023",
@@ -3050,7 +3050,7 @@ export const STUDY_DATA: { questions: Question[]; flashcards: Flashcard[] } = {
       question: "Which of the following is true about digital certificates?",
       options: ["They contain private keys", "They bind public keys to identities", "They are not signed", "They expire after 1 year only"],
       correctAnswer: 1,
-      explanation: "NLC practice question - review topic for details.",
+      explanation: "Digital certificates bind public keys to identities.",
     },
     {
       id: "nlx_024",
@@ -3058,7 +3058,7 @@ export const STUDY_DATA: { questions: Question[]; flashcards: Flashcard[] } = {
       question: "Which of the the following is true about hashing algorithms?",
       options: ["MD5 is currently recommended for security", "SHA-1 is the current standard", "SHA-256 produces 256-bit output", "SHA-512 is weaker than SHA-256"],
       correctAnswer: 2,
-      explanation: "NLC practice question - review topic for details.",
+      explanation: "Collision resistance means two different inputs shouldn't produce the same hash.",
     },
     {
       id: "nlx_025",
@@ -3066,7 +3066,7 @@ export const STUDY_DATA: { questions: Question[]; flashcards: Flashcard[] } = {
       question: "Which of the following is true about access control?",
       options: ["DAC uses system-enforced labels", "MAC allows owners to set permissions", "RBAC grants access based on roles", "ABAC is the oldest model"],
       correctAnswer: 2,
-      explanation: "NLC practice question - review topic for details.",
+      explanation: "Access control restricts resource access to authorized users.",
     },
     {
       id: "nlx_026",
@@ -3074,7 +3074,7 @@ export const STUDY_DATA: { questions: Question[]; flashcards: Flashcard[] } = {
       question: "Which of the following is true about RAID?",
       options: ["RAID 1 provides striping", "RAID 5 uses mirroring", "RAID 0 provides no fault tolerance", "RAID 10 requires 6 disks"],
       correctAnswer: 2,
-      explanation: "NLC practice question - review topic for details.",
+      explanation: "RAID combines multiple disks for redundancy or performance.",
     },
     {
       id: "nlx_027",
@@ -3082,7 +3082,7 @@ export const STUDY_DATA: { questions: Question[]; flashcards: Flashcard[] } = {
       question: "Which of the following is true about cloud computing?",
       options: ["SaaS gives the most control", "PaaS requires OS management", "IaaS gives the most control", "Cloud always costs less"],
       correctAnswer: 2,
-      explanation: "NLC practice question - review topic for details.",
+      explanation: "Cloud computing delivers on-demand IT resources over the internet.",
     },
     {
       id: "nlx_028",
@@ -3090,7 +3090,7 @@ export const STUDY_DATA: { questions: Question[]; flashcards: Flashcard[] } = {
       question: "Which of the following is true about IoT security?",
       options: ["IoT devices have unlimited resources", "IoT devices often have limited computational resources", "IoT devices always use WPA3", "IoT devices cannot be patched"],
       correctAnswer: 1,
-      explanation: "NLC practice question - review topic for details.",
+      explanation: "IoT devices often ship with insecure defaults and lack updates.",
     },
     {
       id: "nlx_029",
@@ -3098,7 +3098,7 @@ export const STUDY_DATA: { questions: Question[]; flashcards: Flashcard[] } = {
       question: "Which of the following is true about physical security?",
       options: ["Faraday cages block network traffic", "Mantraps prevent tailgating", "Class A fires involve electricity", "CO2 is for Class A fires"],
       correctAnswer: 1,
-      explanation: "NLC practice question - review topic for details.",
+      explanation: "Physical security controls protect against physical access to systems.",
     },
     {
       id: "nlx_030",
@@ -3106,7 +3106,7 @@ export const STUDY_DATA: { questions: Question[]; flashcards: Flashcard[] } = {
       question: "Which of the following is true about firewalls?",
       options: ["Stateless firewalls track connection state", "WAF operates at Layer 3", "Proxy firewalls operate at Layer 7", "Packet filtering is the slowest type"],
       correctAnswer: 2,
-      explanation: "NLC practice question - review topic for details.",
+      explanation: "Firewalls filter traffic based on security rules.",
     },
     {
       id: "nlx_031",
@@ -3114,7 +3114,7 @@ export const STUDY_DATA: { questions: Question[]; flashcards: Flashcard[] } = {
       question: "Which of the following is true about incident response?",
       options: ["Preparation is optional", "Detection comes before containment", "Eradication is first", "Post-incident activity is not needed"],
       correctAnswer: 1,
-      explanation: "NLC practice question - review topic for details.",
+      explanation: "Incident response handles security breaches in an organized way.",
     },
     {
       id: "nlx_032",
@@ -3122,7 +3122,7 @@ export const STUDY_DATA: { questions: Question[]; flashcards: Flashcard[] } = {
       question: "Which of the following is true about risk management?",
       options: ["Qualitative uses dollar values", "Quantitative uses High/Med/Low ratings", "ALE = SLE x ARO", "Risk transfer means eliminating the risk"],
       correctAnswer: 2,
-      explanation: "NLC practice question - review topic for details.",
+      explanation: "Risk management identifies, assesses, and mitigates risks.",
     },
     {
       id: "nlx_033",
@@ -3130,7 +3130,7 @@ export const STUDY_DATA: { questions: Question[]; flashcards: Flashcard[] } = {
       question: "Which of the following is true about IDS/IPS?",
       options: ["IDS actively blocks traffic", "IPS is passive", "IDS only works at Layer 7", "IPS sits inline and can block traffic"],
       correctAnswer: 3,
-      explanation: "NLC practice question - review topic for details.",
+      explanation: "IDS detects intrusions; IPS also blocks them.",
     },
     {
       id: "nlx_034",
@@ -3138,7 +3138,7 @@ export const STUDY_DATA: { questions: Question[]; flashcards: Flashcard[] } = {
       question: "Which of the following is true about SIEM?",
       options: ["It only collects logs", "It aggregates and correlates log data from multiple sources", "It replaces firewalls", "It only works on Windows"],
       correctAnswer: 1,
-      explanation: "NLC practice question - review topic for details.",
+      explanation: "SIEM aggregates and analyzes security logs.",
     },
     {
       id: "nlx_035",
@@ -3146,7 +3146,7 @@ export const STUDY_DATA: { questions: Question[]; flashcards: Flashcard[] } = {
       question: "Which of the following is true about honeypots?",
       options: ["They are production servers", "They appear vulnerable to attract attackers", "They replace IDS", "They block all traffic"],
       correctAnswer: 1,
-      explanation: "NLC practice question - review topic for details.",
+      explanation: "Honeypots are decoy systems for studying attackers.",
     },
     {
       id: "nlx_036",
@@ -3162,7 +3162,7 @@ export const STUDY_DATA: { questions: Question[]; flashcards: Flashcard[] } = {
       question: "Which of the following is true about RPO and RTO?",
       options: ["RPO measures downtime", "RTO measures data loss", "RPO is about acceptable data loss", "They are the same thing"],
       correctAnswer: 2,
-      explanation: "NLC practice question - review topic for details.",
+      explanation: "RPO is about acceptable data loss (how much data you can lose); RTO is about acceptable downtime (how fast you must recover).",
     },
     {
       id: "nlx_038",
@@ -3170,7 +3170,7 @@ export const STUDY_DATA: { questions: Question[]; flashcards: Flashcard[] } = {
       question: "Which of the following is true about hot/warm/cold sites?",
       options: ["Cold sites have live servers", "Hot sites have the longest RTO", "Warm sites require data restoration", "Cold sites are the most expensive"],
       correctAnswer: 2,
-      explanation: "NLC practice question - review topic for details.",
+      explanation: "Cold sites have the longest recovery time; hot sites the shortest.",
     },
     {
       id: "nlx_039",
@@ -3178,7 +3178,7 @@ export const STUDY_DATA: { questions: Question[]; flashcards: Flashcard[] } = {
       question: "Which of the following is true about business continuity?",
       options: ["BCP only covers IT systems", "BCP covers all critical business functions", "DRP is more comprehensive than BCP", "BCP is optional"],
       correctAnswer: 1,
-      explanation: "NLC practice question - review topic for details.",
+      explanation: "Business continuity keeps operations running during disruptions.",
     },
     {
       id: "nlx_040",
@@ -3186,7 +3186,7 @@ export const STUDY_DATA: { questions: Question[]; flashcards: Flashcard[] } = {
       question: "Which of the following is true about change management?",
       options: ["It allows anyone to make changes", "It prevents unauthorized changes from introducing vulnerabilities", "It eliminates the need for testing", "It is only for software"],
       correctAnswer: 1,
-      explanation: "NLC practice question - review topic for details.",
+      explanation: "Change management reviews and approves changes before deployment.",
     },
     {
       id: "nlx_041",
@@ -3194,7 +3194,7 @@ export const STUDY_DATA: { questions: Question[]; flashcards: Flashcard[] } = {
       question: "Which of the following is true about vulnerability scanning?",
       options: ["It exploits vulnerabilities", "It identifies weaknesses without exploitation", "It replaces penetration testing", "It is illegal"],
       correctAnswer: 1,
-      explanation: "NLC practice question - review topic for details.",
+      explanation: "Vulnerability scanning identifies known weaknesses without exploitation.",
     },
     {
       id: "nlx_042",
@@ -3202,7 +3202,7 @@ export const STUDY_DATA: { questions: Question[]; flashcards: Flashcard[] } = {
       question: "Which of the following is true about penetration testing?",
       options: ["It is automated", "It simulates real attacks under controlled conditions", "It only uses known tools", "It does not require authorization"],
       correctAnswer: 1,
-      explanation: "NLC practice question - review topic for details.",
+      explanation: "Penetration testing actively exploits vulnerabilities to validate risk.",
     },
     {
       id: "nlx_043",
@@ -3210,7 +3210,7 @@ export const STUDY_DATA: { questions: Question[]; flashcards: Flashcard[] } = {
       question: "Which of the following is true about security awareness training?",
       options: ["It is only for IT staff", "It should be conducted regularly", "It eliminates all phishing risk", "It is optional"],
       correctAnswer: 1,
-      explanation: "NLC practice question - review topic for details.",
+      explanation: "Security awareness training teaches users to recognize threats.",
     },
     {
       id: "nlx_044",
@@ -3218,7 +3218,7 @@ export const STUDY_DATA: { questions: Question[]; flashcards: Flashcard[] } = {
       question: "Which of the following is true about phishing simulations?",
       options: ["They send real malware", "They test employee awareness of phishing attempts", "They block spam", "They encrypt email"],
       correctAnswer: 1,
-      explanation: "NLC practice question - review topic for details.",
+      explanation: "Phishing simulations test user susceptibility to phishing.",
     },
     {
       id: "nlx_045",
@@ -3226,7 +3226,7 @@ export const STUDY_DATA: { questions: Question[]; flashcards: Flashcard[] } = {
       question: "Which of the following is true about data masking?",
       options: ["It encrypts data", "It replaces sensitive data with fictitious values", "It deletes data permanently", "It compresses data"],
       correctAnswer: 1,
-      explanation: "NLC practice question - review topic for details.",
+      explanation: "Data masking replaces sensitive values with realistic fictitious data.",
     },
     {
       id: "nlx_046",
@@ -3234,7 +3234,7 @@ export const STUDY_DATA: { questions: Question[]; flashcards: Flashcard[] } = {
       question: "Which of the following is true about tokenization?",
       options: ["It encrypts data with tokens", "It replaces sensitive data with non-sensitive tokens", "It is the same as hashing", "It only works on numbers"],
       correctAnswer: 1,
-      explanation: "NLC practice question - review topic for details.",
+      explanation: "Tokenization substitutes sensitive data with non-sensitive tokens.",
     },
     {
       id: "nlx_047",
@@ -3242,7 +3242,7 @@ export const STUDY_DATA: { questions: Question[]; flashcards: Flashcard[] } = {
       question: "Which of the following is true about virtualization?",
       options: ["VMs share the host OS kernel", "Containers share the host OS kernel", "VMs are always faster than containers", "Containers provide stronger isolation than VMs"],
       correctAnswer: 1,
-      explanation: "NLC practice question - review topic for details.",
+      explanation: "Virtualization runs multiple OS instances on one physical host.",
     },
     {
       id: "nlx_048",
@@ -3250,7 +3250,7 @@ export const STUDY_DATA: { questions: Question[]; flashcards: Flashcard[] } = {
       question: "Which of the following is true about containers?",
       options: ["They require a full OS per instance", "They share the host OS kernel", "They are slower than VMs", "They do not provide isolation"],
       correctAnswer: 1,
-      explanation: "NLC practice question - review topic for details.",
+      explanation: "Containers share the host OS kernel.",
     },
     {
       id: "nlx_049",
@@ -3258,7 +3258,7 @@ export const STUDY_DATA: { questions: Question[]; flashcards: Flashcard[] } = {
       question: "Which of the following is true about hypervisors?",
       options: ["Type-1 runs on bare metal", "Type-2 runs on bare metal", "Type-1 is slower", "Type-2 provides better isolation"],
       correctAnswer: 0,
-      explanation: "NLC practice question - review topic for details.",
+      explanation: "Type-1 hypervisors run on bare metal; Type-2 run on a host OS.",
     },
     {
       id: "nlx_050",
@@ -3266,7 +3266,7 @@ export const STUDY_DATA: { questions: Question[]; flashcards: Flashcard[] } = {
       question: "Which of the following is true about ASLR?",
       options: ["It encrypts memory", "It randomizes memory addresses to prevent buffer overflow exploits", "It speeds up program execution", "It prevents phishing"],
       correctAnswer: 1,
-      explanation: "NLC practice question - review topic for details.",
+      explanation: "ASLR randomizes memory addresses to hinder exploitation.",
     },
     {
       id: "nlx_051",
@@ -3274,7 +3274,7 @@ export const STUDY_DATA: { questions: Question[]; flashcards: Flashcard[] } = {
       question: "Which of the following is true about DEP?",
       options: ["It encrypts data", "It prevents code execution in data memory regions", "It speeds up the CPU", "It prevents network attacks"],
       correctAnswer: 1,
-      explanation: "NLC practice question - review topic for details.",
+      explanation: "DEP marks memory regions as non-executable.",
     },
     {
       id: "nlx_052",
@@ -3282,7 +3282,7 @@ export const STUDY_DATA: { questions: Question[]; flashcards: Flashcard[] } = {
       question: "Which of the following is true about buffer overflow attacks?",
       options: ["They only affect Linux", "They write more data to a buffer than it can hold", "They are prevented by strong passwords", "They only target web applications"],
       correctAnswer: 1,
-      explanation: "NLC practice question - review topic for details.",
+      explanation: "Buffer overflows write past allocated memory, potentially corrupting control data.",
     },
     {
       id: "nlx_053",
@@ -3290,7 +3290,7 @@ export const STUDY_DATA: { questions: Question[]; flashcards: Flashcard[] } = {
       question: "Which of the following is true about SQL injection?",
       options: ["It targets databases through unsanitized input", "It is prevented by firewalls only", "It only affects MySQL", "It is a type of malware"],
       correctAnswer: 0,
-      explanation: "NLC practice question - review topic for details.",
+      explanation: "SQL injection inserts malicious SQL via user input.",
     },
     {
       id: "nlx_054",
@@ -3298,7 +3298,7 @@ export const STUDY_DATA: { questions: Question[]; flashcards: Flashcard[] } = {
       question: "Which of the following is true about cross-site scripting (XSS)?",
       options: ["It injects malicious scripts into web pages viewed by others", "It only affects databases", "It is prevented by HTTPS only", "It is a type of virus"],
       correctAnswer: 0,
-      explanation: "NLC practice question - review topic for details.",
+      explanation: "XSS injects malicious scripts into web pages viewed by others.",
     },
     {
       id: "nlx_055",
@@ -3306,7 +3306,7 @@ export const STUDY_DATA: { questions: Question[]; flashcards: Flashcard[] } = {
       question: "Which of the following is true about CSRF attacks?",
       options: ["They exploit SQL vulnerabilities", "They trick browsers into making unauthorized requests", "They only affect mobile apps", "They are prevented by encryption"],
       correctAnswer: 1,
-      explanation: "NLC practice question - review topic for details.",
+      explanation: "CSRF tricks a user's browser into executing unwanted actions.",
     },
     {
       id: "nlx_056",
@@ -3314,7 +3314,7 @@ export const STUDY_DATA: { questions: Question[]; flashcards: Flashcard[] } = {
       question: "Which of the following is true about man-in-the-middle attacks?",
       options: ["They only affect wireless networks", "An attacker intercepts communication between two parties", "They are prevented by strong passwords only", "They are impossible with HTTPS"],
       correctAnswer: 1,
-      explanation: "NLC practice question - review topic for details.",
+      explanation: "MitM attacks intercept and possibly alter communications between two parties.",
     },
     {
       id: "nlx_057",
@@ -3322,7 +3322,7 @@ export const STUDY_DATA: { questions: Question[]; flashcards: Flashcard[] } = {
       question: "Which of the following is true about replay attacks?",
       options: ["They reuse captured authentication tokens", "They only affect passwords", "They are prevented by hashing", "They are a type of malware"],
       correctAnswer: 0,
-      explanation: "NLC practice question - review topic for details.",
+      explanation: "Replay attacks capture and resend valid data transmissions.",
     },
     {
       id: "nlx_058",
@@ -3330,7 +3330,7 @@ export const STUDY_DATA: { questions: Question[]; flashcards: Flashcard[] } = {
       question: "Which of the following is true about DNS spoofing?",
       options: ["It encrypts DNS queries", "It redirects users to malicious sites by corrupting DNS resolution", "It only affects local networks", "It is prevented by firewalls only"],
       correctAnswer: 1,
-      explanation: "NLC practice question - review topic for details.",
+      explanation: "DNS spoofing returns false IP addresses for domain names.",
     },
     {
       id: "nlx_059",
@@ -3338,7 +3338,7 @@ export const STUDY_DATA: { questions: Question[]; flashcards: Flashcard[] } = {
       question: "Which of the following is true about ARP spoofing?",
       options: ["It encrypts ARP packets", "It maps an attacker MAC address to a legitimate IP", "It only affects IPv6", "It is prevented by HTTPS"],
       correctAnswer: 1,
-      explanation: "NLC practice question - review topic for details.",
+      explanation: "ARP spoofing associates an attacker's MAC with a target's IP.",
     },
     {
       id: "nlx_060",
@@ -3346,7 +3346,7 @@ export const STUDY_DATA: { questions: Question[]; flashcards: Flashcard[] } = {
       question: "Which of the following is true about zero-day vulnerabilities?",
       options: ["They have been known for zero days", "They have no patch available at time of discovery", "They have zero impact", "They are impossible to exploit"],
       correctAnswer: 1,
-      explanation: "NLC practice question - review topic for details.",
+      explanation: "Zero-day vulnerabilities are exploited before a patch exists.",
     },
     {
       id: "nlx_061",
@@ -3354,7 +3354,7 @@ export const STUDY_DATA: { questions: Question[]; flashcards: Flashcard[] } = {
       question: "Which of the following is true about rootkits?",
       options: ["They only affect mobile devices", "They hide malware presence from the OS", "They are easily detected by antivirus", "They only target browsers"],
       correctAnswer: 1,
-      explanation: "NLC practice question - review topic for details.",
+      explanation: "Rootkits hide malicious activity by modifying system components.",
     },
     {
       id: "nlx_062",
@@ -3362,7 +3362,7 @@ export const STUDY_DATA: { questions: Question[]; flashcards: Flashcard[] } = {
       question: "Which of the following is true about keyloggers?",
       options: ["They record keystrokes to steal credentials", "They encrypt files", "They spread via email only", "They are a type of firewall"],
       correctAnswer: 0,
-      explanation: "NLC practice question - review topic for details.",
+      explanation: "Keyloggers record keystrokes.",
     },
     {
       id: "nlx_063",
@@ -3370,7 +3370,7 @@ export const STUDY_DATA: { questions: Question[]; flashcards: Flashcard[] } = {
       question: "Which of the following is true about adware?",
       options: ["It displays unwanted advertisements", "It encrypts files", "It is always harmless", "It only affects servers"],
       correctAnswer: 0,
-      explanation: "NLC practice question - review topic for details.",
+      explanation: "Adware displays unwanted advertisements.",
     },
     {
       id: "nlx_064",
@@ -3378,7 +3378,7 @@ export const STUDY_DATA: { questions: Question[]; flashcards: Flashcard[] } = {
       question: "Which of the following is true about spyware?",
       options: ["It monitors user activity without consent", "It speeds up the computer", "It is legal everywhere", "It only affects networks"],
       correctAnswer: 0,
-      explanation: "NLC practice question - review topic for details.",
+      explanation: "Spyware secretly collects user information.",
     },
     {
       id: "nlx_065",
@@ -3386,7 +3386,7 @@ export const STUDY_DATA: { questions: Question[]; flashcards: Flashcard[] } = {
       question: "Which of the following is true about logic bombs?",
       options: ["They explode physically", "They activate when specific conditions are met", "They only affect hardware", "They are a type of virus"],
       correctAnswer: 1,
-      explanation: "NLC practice question - review topic for details.",
+      explanation: "Logic bombs execute when triggered by a specific condition.",
     },
     {
       id: "nlx_066",
@@ -3394,7 +3394,7 @@ export const STUDY_DATA: { questions: Question[]; flashcards: Flashcard[] } = {
       question: "Which of the following is true about botnets?",
       options: ["They are networks of compromised computers", "They only send spam", "They are always legal", "They only target mobile devices"],
       correctAnswer: 0,
-      explanation: "NLC practice question - review topic for details.",
+      explanation: "Botnets are networks of compromised devices controlled by an attacker.",
     },
     {
       id: "nlx_067",
@@ -3402,7 +3402,7 @@ export const STUDY_DATA: { questions: Question[]; flashcards: Flashcard[] } = {
       question: "Which of the following is true about DDoS attacks?",
       options: ["They come from a single source", "They use multiple sources to overwhelm a target", "They only affect DNS servers", "They are prevented by passwords"],
       correctAnswer: 1,
-      explanation: "NLC practice question - review topic for details.",
+      explanation: "DDoS attacks overwhelm a target with traffic from many sources.",
     },
     {
       id: "nlx_068",
@@ -3410,7 +3410,7 @@ export const STUDY_DATA: { questions: Question[]; flashcards: Flashcard[] } = {
       question: "Which of the following is true about the Cyber Kill Chain?",
       options: ["It describes attack stages from reconnaissance to actions", "It is a type of firewall", "It only applies to APTs", "It was developed by NIST"],
       correctAnswer: 0,
-      explanation: "NLC practice question - review topic for details.",
+      explanation: "The Cyber Kill Chain describes stages of a cyberattack from reconnaissance to impact.",
     },
     {
       id: "nlx_069",
@@ -3418,7 +3418,7 @@ export const STUDY_DATA: { questions: Question[]; flashcards: Flashcard[] } = {
       question: "Which of the following is true about threat intelligence?",
       options: ["It provides actionable information about current threats", "It replaces firewalls", "It is only for government use", "It eliminates all attacks"],
       correctAnswer: 0,
-      explanation: "NLC practice question - review topic for details.",
+      explanation: "Threat intelligence provides information about current and emerging threats.",
     },
     {
       id: "nlx_070",
@@ -3426,7 +3426,7 @@ export const STUDY_DATA: { questions: Question[]; flashcards: Flashcard[] } = {
       question: "Which of the following is true about SOAR?",
       options: ["It automates security orchestration and response", "It is a type of malware", "It only works on-premises", "It replaces all security tools"],
       correctAnswer: 0,
-      explanation: "NLC practice question - review topic for details.",
+      explanation: "SOAR automates security operations and incident response.",
     },
     {
       id: "nlx_071",
@@ -3434,7 +3434,7 @@ export const STUDY_DATA: { questions: Question[]; flashcards: Flashcard[] } = {
       question: "Which of the following is true about STIX/TAXII?",
       options: ["They are threat intelligence sharing standards", "They are encryption algorithms", "They are firewall protocols", "They are types of malware"],
       correctAnswer: 0,
-      explanation: "NLC practice question - review topic for details.",
+      explanation: "STIX/TAXII are standards for sharing threat intelligence.",
     },
     {
       id: "nlx_072",
@@ -3442,7 +3442,7 @@ export const STUDY_DATA: { questions: Question[]; flashcards: Flashcard[] } = {
       question: "Which of the following is true about digital forensics?",
       options: ["It only deals with computers", "It involves collecting, analyzing, and preserving digital evidence", "It does not require chain of custody", "It is the same as penetration testing"],
       correctAnswer: 1,
-      explanation: "NLC practice question - review topic for details.",
+      explanation: "Digital forensics investigates digital evidence related to crime or incidents.",
     },
     {
       id: "nlx_073",
@@ -3450,7 +3450,7 @@ export const STUDY_DATA: { questions: Question[]; flashcards: Flashcard[] } = {
       question: "Which of the following is true about the chain of custody?",
       options: ["It tracks who handled evidence and when", "It is optional in forensics", "It only applies to physical evidence", "It can be broken without consequences"],
       correctAnswer: 0,
-      explanation: "NLC practice question - review topic for details.",
+      explanation: "Chain of custody documents evidence handling to preserve admissibility.",
     },
     {
       id: "nlx_074",
@@ -3458,7 +3458,7 @@ export const STUDY_DATA: { questions: Question[]; flashcards: Flashcard[] } = {
       question: "Which of the following is true about live forensics?",
       options: ["It involves collecting evidence from powered-on systems", "It requires shutting down the system first", "It is less reliable than dead forensics", "It only collects hard drive data"],
       correctAnswer: 0,
-      explanation: "NLC practice question - review topic for details.",
+      explanation: "Live forensics examines a running system.",
     },
     {
       id: "nlx_075",
@@ -3466,7 +3466,7 @@ export const STUDY_DATA: { questions: Question[]; flashcards: Flashcard[] } = {
       question: "Which of the following is true about dead forensics?",
       options: ["It analyzes a running system", "It involves imaging a powered-off storage device", "It is more reliable than live forensics for RAM data", "It does not require write-blocking"],
       correctAnswer: 1,
-      explanation: "NLC practice question - review topic for details.",
+      explanation: "Dead forensics examines a powered-off system's storage.",
     },
     {
       id: "nlx_076",
@@ -3474,7 +3474,7 @@ export const STUDY_DATA: { questions: Question[]; flashcards: Flashcard[] } = {
       question: "Which of the following is true about write-blocking in forensics?",
       options: ["It speeds up disk access", "It prevents modification of evidence during acquisition", "It is optional", "It only applies to SSDs"],
       correctAnswer: 1,
-      explanation: "NLC practice question - review topic for details.",
+      explanation: "Write-blocking prevents changes to evidence media during acquisition.",
     },
     {
       id: "nlx_077",
@@ -3482,7 +3482,7 @@ export const STUDY_DATA: { questions: Question[]; flashcards: Flashcard[] } = {
       question: "Which of the following is true about legal hold in e-discovery?",
       options: ["It deletes data after litigation", "It preserves relevant data for legal proceedings", "It is only for criminal cases", "It does not require documentation"],
       correctAnswer: 1,
-      explanation: "NLC practice question - review topic for details.",
+      explanation: "A legal hold requires preserving relevant data for potential litigation.",
     },
   ],
   flashcards: [
