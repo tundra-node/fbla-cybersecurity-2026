@@ -1,98 +1,48 @@
-# FBLA Cybersecurity Study App — Offline Setup
+# Running offline
 
-## Quick Start (No WiFi Needed After Initial Setup)
+The live site needs internet. To study somewhere without it (a plane, a hotel with bad Wi-Fi), set this up while you still have a connection.
 
-### Prerequisites
-- **Node.js** (v18+): [nodejs.org](https://nodejs.org) — download the LTS installer
-- **Git**: [git-scm.com](https://git-scm.com)
+## One-time setup (needs internet)
 
-### One-Time Setup (Do this BEFORE the plane, while you have WiFi)
+You need Node.js 18 or newer and Git.
 
 ```bash
-# 1. Clone the repo
 git clone https://github.com/tundra-node/fbla-cybersecurity-2026.git
 cd fbla-cybersecurity-2026
-
-# 2. Install dependencies
-npm install
-
-# 3. Build for production (generates static files in dist/)
+npm ci
 npm run build
 ```
 
-### Running Locally (Offline, No WiFi Needed)
+## Running it (no internet needed)
 
-#### Option A: Simple HTTP Server (Easiest)
+### Option A: built version
+
 ```bash
-# From the fbla-cybersecurity-2026 directory:
-npx serve dist
+npm run preview
 ```
-Then open `http://localhost:3000` in your browser.
 
-#### Option B: Vite Dev Server (Hot reload)
+Open http://localhost:4173/fbla-cybersecurity-2026/
+
+The build is made for GitHub Pages, so every asset path starts with `/fbla-cybersecurity-2026/`. Serving `dist/` at the root with `npx serve dist` or `python3 -m http.server` gives a blank page, and opening `dist/index.html` directly does not work either. Use `npm run preview`.
+
+### Option B: dev server
+
 ```bash
-# From the fbla-cybersecurity-2026 directory:
 npm run dev
 ```
-Then open `http://localhost:5173` in your browser.
 
-#### Option C: Python (If Node isn't available)
-```bash
-cd dist
-python3 -m http.server 3000
-```
-Then open `http://localhost:3000`.
+Open http://localhost:3000/fbla-cybersecurity-2026/
 
-#### Option D: Just open the HTML file
-```bash
-# macOS
-open dist/index.html
+## Notes
 
-# Linux
-xdg-open dist/index.html
+- The JetBrains Mono font loads from Google Fonts. Offline, the app falls back to your system monospace font. Everything else works.
+- Progress, the wrong answer bank, flashcard state and session history live in your browser's localStorage. They stay between sessions on the same browser and port, and they do not sync between devices.
+- Changing the port (for example `npm run preview -- --port 8080`) gives the page a new origin, so saved progress will not carry over.
 
-# Windows
-start dist/index.html
-```
-Note: Option D may have issues with some browsers due to CORS. Option A or B is recommended.
+## Pre-flight checklist
 
-### Project Structure
-```
-fbla-cybersecurity-2026/
-├── src/
-│   ├── App.tsx          # Main app component (quiz, flashcards, progress)
-│   ├── data.ts          # 523 questions + 144 flashcards
-│   ├── main.tsx         # Entry point
-│   └── lib/utils.ts     # Utility functions
-├── dist/                # Built static files (after npm run build)
-├── index.html
-├── package.json
-├── vite.config.ts
-└── tsconfig.json
-```
-
-### Available Commands
-| Command | Description |
-|---------|-------------|
-| `npm run dev` | Dev server with hot reload |
-| `npm run build` | Build production files to dist/ |
-| `npm run preview` | Preview production build locally |
-
-### How to Use (Offline)
-1. **Quiz Mode**: Take 100-question mock exams (50 min), speed quizzes (10q/3min), or cram on wrong answers
-2. **Flashcards**: Flip through cards, mark "Got It" or "Still Learning"
-3. **Reference Sheet**: Full cheat sheet covering all 6 knowledge areas
-4. **Progress Tracker**: See accuracy by category, session history, streak counter
-
-### Troubleshooting
-- **Blank page?** Make sure you ran `npm run build` first (for Option A/C/D)
-- **Port already in use?** Change the port: `npx serve dist -l 8080`
-- **Stale data?** Your progress is saved in browser localStorage — it persists between sessions
-
-### Pre-Flight Checklist
-- [ ] Clone repo
-- [ ] `npm install`
+- [ ] Clone the repo
+- [ ] `npm ci`
 - [ ] `npm run build`
-- [ ] Test that `npx serve dist` works and you can open in browser
-- [ ] Bookmark the local URL (http://localhost:3000)
-- [ ] You're good to go offline! ✈️
+- [ ] Run `npm run preview` and confirm the page loads
+- [ ] Bookmark http://localhost:4173/fbla-cybersecurity-2026/
