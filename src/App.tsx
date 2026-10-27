@@ -1587,11 +1587,11 @@ export default function App() {
                 <div><span className="text-orange-400 font-bold block">Orange</span>TCSEC (computer security)</div>
                 <div><span className="text-red-400 font-bold block">Red</span>Network security</div>
                 <div><span className="text-green-400 font-bold block">Green</span>Password management</div>
-                <div><span className="text-blue-400 font-bold block">Blue</span>Database security</div>
-                <div><span className="text-purple-400 font-bold block">Purple</span>Trusted distribution</div>
-                <div><span className="text-yellow-400 font-bold block">Tan</span>PC security</div>
-                <div><span className="text-pink-400 font-bold block">Lavender</span>formal verification</div>
-                <div><span className="text-cyan-400 font-bold block">Venus</span>security auditing</div>
+                <div><span className="text-purple-400 font-bold block">Purple</span>Trusted database (TDI); also formal verification</div>
+                <div><span className="text-yellow-400 font-bold block">Tan</span>Audit in trusted systems</div>
+                <div><span className="text-sky-300 font-bold block">Light Blue</span>PC security</div>
+                <div><span className="text-pink-400 font-bold block">Dark Lavender</span>Trusted distribution</div>
+                <div><span className="text-blue-400 font-bold block">Blue</span>Product evaluation questionnaire</div>
                 <br/><span className="text-slate-200 col-span-2"><b>ITSEC</b>: European alternative to TCSEC, rated E0–E6</span>
               </div>
             </Card>
@@ -1701,7 +1701,7 @@ export default function App() {
               <h4 className="font-bold text-slate-200 mb-2">Cloud Models</h4>
               <ul className="text-xs text-slate-400 space-y-1.5">
                 <li><span className="text-purple-400 font-bold">IaaS</span> — You manage OS, runtime, apps. (EC2)</li>
-                <li><span className="text-purple-400 font-bold">PaaS</span> — You manage apps only. (Heroku)</li>
+                <li><span className="text-purple-400 font-bold">PaaS</span> — You manage apps + data. (Heroku)</li>
                 <li><span className="text-purple-400 font-bold">SaaS</span> — Provider manages all. (Office 365)</li>
                 <li>• <span className="text-slate-200">Most control:</span> IaaS</li>
                 <li>• <span className="text-slate-200">Least control:</span> SaaS</li>
@@ -1844,7 +1844,7 @@ export default function App() {
                 <li>• <span className="text-slate-200">Write-blocker:</span> prevents evidence modification</li>
                 <li>• <span className="text-slate-200">Live forensics:</span> collect from running system</li>
                 <li>• <span className="text-slate-200">Dead forensics:</span> image a powered-off system</li>
-                <li>• <span className="text-slate-200">dd connt:</span> count of bytes transferred (verify integrity)</li>
+                <li>• <span className="text-slate-200">dd count=:</span> number of blocks to copy (bs × count = bytes)</li>
               </ul>
             </Card>
           </div>
@@ -1922,7 +1922,7 @@ export default function App() {
               </ul>
             </Card>
             <Card className="p-4 bg-slate-800/30">
-              <h4 className="font-bold text-slate-200 mb2">Policies &amp; Procedures</h4>
+              <h4 className="font-bold text-slate-200 mb-2">Policies &amp; Procedures</h4>
               <ul className="text-xs text-slate-400 space-y-1.5">
                 <li><span className="text-yellow-400 font-bold">AUP:</span> Acceptable Use Policy</li>
                 <li><span className="text-yellow-400 font-bold">BCP:</span> Business Continuity Plan</li>
@@ -1957,7 +1957,7 @@ export default function App() {
               </ul>
             </Card>
             <Card className="p-4 bg-slate-800/30">
-              <h4 className="font-bold text-slate-200 mb2">Obfuscation &amp; Data Protection</h4>
+              <h4 className="font-bold text-slate-200 mb-2">Obfuscation &amp; Data Protection</h4>
               <ul className="text-xs text-slate-400 space-y-1.5">
                 <li><span className="text-cyan-400 font-bold">Tokenization:</span> CC number → token (vault maps back)</li>
                 <li><span className="text-cyan-400 font-bold">Data Masking:</span> Realistic fake data for testing</li>
